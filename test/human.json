@@ -1,0 +1,1120 @@
+{
+  "id": "Q5",
+  "type": "item",
+  "modified": "2019-05-23T03:05:52Z",
+  "labels": {
+    "en": "human",
+    "fr": "être humain",
+    "ru": "человек",
+    "eo": "homo",
+    "it": "umano",
+    "de": "Mensch",
+    "pl": "człowiek",
+    "es": "ser humano",
+    "be-tarask": "чалавек",
+    "map-bms": "tokoh",
+    "yue": "人",
+    "lzh": "人",
+    "sgs": "žmuogos",
+    "rup": "homo sapiens",
+    "nan": "lâng",
+    "nds-nl": "Mense",
+    "vro": "Inemine",
+    "en-gb": "human",
+    "ja": "ヒト",
+    "zh-hant": "人類",
+    "fi": "ihminen",
+    "hr": "čovjek",
+    "pt": "ser humano",
+    "zh": "人類",
+    "ko": "사람",
+    "uz": "odam",
+    "af": "Mens",
+    "am": "የሰው ልጅ",
+    "an": "Homo sapiens",
+    "ar": "إنسان",
+    "arc": "ܒܪ ܐܢܫܐ",
+    "arz": "انسان",
+    "ast": "humanu",
+    "av": "гӀадан",
+    "ay": "jaqi",
+    "az": "İnsan",
+    "bar": "Mensch",
+    "be": "чалавек",
+    "bg": "човек",
+    "bn": "মানুষ",
+    "bo": "འགྲོ་བ་མི།",
+    "br": "den",
+    "bs": "čovjek",
+    "ca": "ésser humà",
+    "cs": "člověk",
+    "cv": "тăнлă çын",
+    "cy": "bod dynol",
+    "da": "menneske",
+    "diq": "Merdum",
+    "el": "άνθρωπος",
+    "et": "inimene",
+    "eu": "gizaki",
+    "ext": "Homo sapiens",
+    "fa": "انسان",
+    "fo": "menniskja",
+    "frp": "Homo sapiens",
+    "frr": "minsk",
+    "fy": "minske",
+    "ga": "duine",
+    "gan": "人",
+    "gl": "ser humano",
+    "glk": "آدم",
+    "gn": "yvypóra",
+    "gu": "મનુષ્ય",
+    "ha": "ɗan Adam",
+    "hak": "ngìn-lui",
+    "he": "אדם",
+    "hi": "मनुष्य",
+    "hif": "insaan",
+    "ht": "Homo sapiens",
+    "hu": "ember",
+    "hy": "մարդ",
+    "ia": "humano",
+    "id": "manusia",
+    "ig": "mádu",
+    "ilo": "tao",
+    "io": "homo",
+    "is": "maður",
+    "iu": "ᐄᒃ",
+    "jbo": "lo remna",
+    "jv": "manungsa",
+    "ka": "ადამიანი",
+    "kg": "muntu",
+    "kk": "саналы адам",
+    "kn": "ಮಾನವ",
+    "koi": "морт",
+    "ksh": "Minsch",
+    "ku": "mirov",
+    "kv": "морт",
+    "kw": "tus",
+    "la": "homo sapiens",
+    "lbe": "инсан",
+    "lez": "кас",
+    "li": "mins",
+    "lij": "ëse uman",
+    "ln": "moto",
+    "lt": "Žmogus",
+    "ltg": "cylvāks",
+    "lv": "cilvēks",
+    "mdf": "ломанць",
+    "mg": "olombelona",
+    "mhr": "айдеме",
+    "mk": "човек",
+    "ml": "മനുഷ്യൻ",
+    "mn": "хүн",
+    "mr": "मानव",
+    "ms": "manusia",
+    "mt": "bniedem",
+    "mwl": "Homo sapiens",
+    "my": "လူ",
+    "nah": "tlācatl",
+    "nds": "Minsch",
+    "ne": "मानिस",
+    "nl": "mens",
+    "nn": "menneske",
+    "nov": "homo sapiens",
+    "oc": "homo sapiens",
+    "or": "ମଣିଷ",
+    "os": "адæймаг",
+    "pms": "òm",
+    "pnb": "انسان",
+    "ps": "انسان",
+    "qu": "runa",
+    "ro": "om",
+    "rue": "Чоловік розумный",
+    "sa": "मनुष्यः",
+    "sah": "киhи",
+    "scn": "èssiri umanu",
+    "sco": "bodie",
+    "se": "olmmoš",
+    "sh": "čovjek",
+    "si": "මිනිසා",
+    "sk": "človek",
+    "sl": "človek",
+    "so": "biniaadan",
+    "sq": "njeri",
+    "sr": "човек",
+    "su": "manusa",
+    "sv": "människa",
+    "sw": "binadamu",
+    "szl": "czowjek",
+    "ta": "மனிதர்",
+    "te": "మానవుడు",
+    "tg": "инсон",
+    "th": "มนุษย์",
+    "tl": "tao",
+    "tr": "insan",
+    "tt": "кеше",
+    "uk": "людина",
+    "ur": "انسان",
+    "vec": "Homo sapiens",
+    "vi": "người",
+    "vls": "mens",
+    "wa": "djin",
+    "war": "tawo",
+    "xh": "abantu",
+    "yi": "מענטש",
+    "yo": "ọmọnìyàn",
+    "za": "vunz",
+    "en-ca": "human",
+    "de-ch": "Mensch",
+    "pt-br": "ser humano",
+    "nb": "menneske",
+    "zh-hans": "人类",
+    "zh-cn": "人类",
+    "zh-sg": "人类",
+    "zh-hk": "人類",
+    "zh-tw": "人類",
+    "zh-mo": "人類",
+    "pa": "ਮਨੁੱਖ",
+    "ckb": "مرۆڤ",
+    "ceb": "tawo",
+    "min": "manusio",
+    "mzn": "آدم",
+    "vep": "ristit",
+    "stq": "moanske",
+    "fur": "omp",
+    "ks": "اِنسان",
+    "pam": "tau",
+    "lb": "Mënsch",
+    "gsw": "Mänsch",
+    "ace": "tokoh",
+    "bxr": "ухаанта хүн",
+    "sr-el": "čovek",
+    "cdo": "nè̤ng",
+    "grc": "ἄνθρωπος",
+    "lzz": "k'oçi",
+    "rm": "uman",
+    "mai": "लोग",
+    "ak": "onipa",
+    "ce": "адам",
+    "ky": "адам",
+    "xmf": "ადამიერი",
+    "lo": "ຜູ້ຄົນ",
+    "azb": "اینسان",
+    "bho": "मनुष्य",
+    "ug": "ئادەم",
+    "sd": "انسان",
+    "ts": "vanhu",
+    "myv": "ломань",
+    "vo": "men",
+    "new": "मनू",
+    "ku-latn": "mirov",
+    "ba": "кеше",
+    "jam": "yuuman",
+    "aeb-arab": "عبد",
+    "as": "মানুহ",
+    "ee": "ame",
+    "hsb": "čłowjek",
+    "tcy": "ಮಾನವೆ",
+    "tg-cyrl": "инсон",
+    "gd": "daonna",
+    "ary": "بنادم",
+    "tt-cyrl": "кеше",
+    "tt-latn": "keşe",
+    "zu": "Umuntu",
+    "dty": "मान्सु",
+    "km": "មនុស្ស",
+    "wuu": "人",
+    "pnt": "άνθρωπος",
+    "lfn": "umana",
+    "olo": "ristikanzu",
+    "lg": "Omuntu",
+    "bcl": "Tao",
+    "inh": "Адам",
+    "rmy": "Manush",
+    "tw": "nyimpa",
+    "atj": "Nehirowisiw",
+    "sat": "ᱢᱟᱹᱱᱢᱤ",
+    "pi": "मनुस्सो",
+    "mi": "tāngata"
+  },
+  "descriptions": {
+    "en": "common name of Homo sapiens, unique extant species of the genus Homo",
+    "fr": "individu appartenant à l’espèce Homo sapiens, la seule espèce restante du genre Homo – distinct de  « humain fictif » et de « humain possiblement fictif »",
+    "de": "höheres Säugetier aus der Ordnung der Primaten, Trivialname von Homo sapiens und Homo sapiens sapiens",
+    "pl": "członek społeczności ludzi współczesnych",
+    "es": "individuo de la especie Homo sapiens; especie animal perteneciente a la familia Hominidae, única superviviente del género Homo",
+    "it": "specie a cui appartiene il genere umano",
+    "nl": "tweevoetige primatensoort uit de familie van de hominidae",
+    "ko": "호모 사피엔스의 일반적인 명칭, 사람속의 한 종",
+    "nb": "art av store aper, art i familien Hominidae, og den eneste levende arten i slekten Homo",
+    "ca": "primat bípede de la família dels homínids",
+    "hu": "a Hominidae családba tartozó főemlősfaj, a Homo nem egyetlen jelenkori képviselője",
+    "ru": "человек как часть сообщества; обиходное название Homo sapiens, вид из семейства Гоминид, единственный сохранившийся вид рода Люди",
+    "zh-hans": "灵长目人科人属的物种",
+    "zh-hant": "靈長目人科人屬的物種",
+    "zh-cn": "灵长目人科人属的物种",
+    "zh-sg": "灵长目人科人属的物种",
+    "zh": "灵长目人科人属的物种",
+    "zh-hk": "靈長目人科人屬的物種",
+    "zh-tw": "靈長目人科人屬的物種",
+    "zh-mo": "靈長目人科人屬的物種",
+    "ja": "霊長目ヒト科の動物",
+    "fi": "älykäs nisäkäslaji isojen ihmisapinoiden heimossa",
+    "ilo": "sibibiag a kamkameng dagiti henero a Homo",
+    "he": "מין בסוג אדם",
+    "pt-br": "espécie da família Hominidae",
+    "fa": "موجود سخنگوی میرنده",
+    "ta": "இருகால் பாலூட்டி",
+    "sv": "en art av släktet människor (Homo)",
+    "cs": "člen lidské společnosti, jediný žijící druh rodu Homo",
+    "pt": "espécie da família Hominidae",
+    "eo": "specio de primato, el la familio de homedoj",
+    "sr": "једина жива врста рода Homo",
+    "la": "sola generis Hominis species viva, familiae Homindarum et ordinis Primatum",
+    "da": "Menneske som medlem af det menneskelige samfund; Almindeligt navn på Homo sapiens",
+    "cy": "rhywogaeth o deulu Hominidae, rhywogaeth unigryw o'r genws Homo",
+    "br": "spesad eus kerentiad an hominidaeed hag eus ar genad Homo",
+    "uk": "вид роду Люди (Homo) із родини гомінід в ряді приматів, єдиний з нині існуючих в теперішній час",
+    "ro": "specie din familia Hominidae, unicul reprezentant contemporan al genului Homo",
+    "vi": "loài duy nhất còn sống của tông Hominini, thuộc lớp động vật có vú",
+    "en-ca": "common name of Homo sapiens, unique extant species of the genus Homo",
+    "scn": "specia dâ famigghia di l'Ominidi, unica specia oggi esistenti dû gèniri Homo",
+    "eu": "Hominidae familiako animalia espeziea, bizirik dirauen Homo generoko espezie bakarra",
+    "en-gb": "common name of Homo sapiens, unique extant species of the genus Homo",
+    "sl": "vrsta iz družine Hominidae",
+    "gl": "especie animal pertencente á familia Hominidae, única supervivente do xénero Homo",
+    "bg": "вид бозайник",
+    "ne": "होमो सेपिन्स को बोलीचालीको नाम, होमो परिवारको एक विशेष प्रजाति",
+    "af": "tweevoetige primaat van die soogdiergenus Homo en die spesie Homo sapiens",
+    "hi": "होमो-सैपीयंज़ स्तनपायी जो दो पैर पर चलता है",
+    "jv": "aran lumrah kanggo Homo sapiens, spésiès-spésiès jroning génus Homo",
+    "myv": "Гоминидэнь семиястонть вид, кона эри неень шкасто",
+    "kn": "ಹೋಮೋ ಸೇಪಿಯನ್ಸ್‍ನ ಸಾಮಾನ್ಯ ಹೆಸರು",
+    "id": "nama umum dari Homo sapiens, spesies unik dari genus Homo",
+    "et": "inimlaste sugukonda kuuluv liik",
+    "ast": "primate bípedu de la familia de los homínidos, únicu sobreviviente del xéneru Homo",
+    "te": "హోమో సేపియన్స్ జాతి జీవుల సాధారణ నామం",
+    "tl": "karaniwang pangalan ng Homo sapiens, espesye na walang katulad ng pamilyang Homo",
+    "ba": "Гоминидтар ғаиләһе төрө, Кеше  ырыуының һаҡланып ҡалған төрө",
+    "ar": "الاسم الشائع للإنسان العاقل",
+    "ka": "ჰომინიდების ოჯახის ერთ-ერთი წარმომადგენელი, ადამიანების გვარის ერთადერთი შემორჩენილი სახეობა",
+    "hr": "živo biće koje ima visoko razvijen mozak sposoban za apstraktno razmišljanje, govor, rješavanje problema, introspekciju i sl",
+    "sk": "jediný žijúci druh rodu Homo",
+    "th": "ชื่อเรียกของโฮโมเซเปียนส์ สปีชีส์ในสกุลโฮโม",
+    "ia": "persona qua membro del genere human; nomine commun de Homo sapiens, unic specie existente del genere Homo",
+    "ml": "ഹോമോ എന്ന ജെനുസിൽ ഇന്ന് ജീവിച്ചിരിക്കുന്ന ഏക ജീവിയാണ് മനുഷ്യൻ",
+    "hsb": "čłowjek jako čłon čłowjeskeho zhromadźenstwa; powšitkowne mjeno rodu Homo sapiens",
+    "tcy": "ಹೋಮೋ ಸೇಪಿಯನ್ಸ್‍ದ ಸಾಮಾನ್ಯೊ ಪುದರ್",
+    "bn": "মানব সমাজের একজন সদস্য হিসেবে মানুষ, হোমো সেপিয়েন্সের সাধারণ নাম",
+    "sq": "Njeriu si një anëtar i shoqërisë njerëzore; Emri i zakonshëm i Homo sapiens, specie unike ekzistuese të gjinisë Homo",
+    "tr": "Homo sapiens'in ortak adı, Homo cinsinin eşsiz mevcut türü",
+    "pa": "ਹੋਮੋ ਸੇਪੀਅਨਜ਼ ਲਈ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਆਮ ਨਾਂਮ, ਹੋਮੋ ਜੀਨਸ ਦੀ ਇੱਕ ਖ਼ਾਸ ਜਾਤੀ",
+    "mr": "होमो-सैपीयंज़ स्तनपायी जो दोन पायांवर चालतो.",
+    "el": "είδος της οικογένειας Hominidae, μοναδικό επιζών είδος του γένους Homo",
+    "lzh": "屬脊索動物門哺乳綱靈長目",
+    "atj": "Nehirowisiw (Q15978631)",
+    "bho": "होमो सेपियंस नाँव के प्रजाति के आम सहज नाँव",
+    "sd": "شعور رکندڙ معاشري۾ رھندڙ مخلوق",
+    "be": "асоба, чалавек як частка супольнасці",
+    "gsw": "de gläuffig Name för de Homo sapiens",
+    "sco": "name for bipedal primates belangin tae the mammalian genus Homo",
+    "lt": "dvikojis primatas, priklausantis hominidų šeimai ir žinduolių klasei."
+  },
+  "aliases": {
+    "en": [
+      "human being",
+      "humankind",
+      "people",
+      "homosapiens",
+      "person"
+    ],
+    "de": [
+      "Homo sapiens",
+      "Person",
+      "Homo sapiens sapiens"
+    ],
+    "pl": [
+      "Homo sapiens",
+      "Homo sapiens sapiens",
+      "człowiek rozumny",
+      "człowiek współczesny"
+    ],
+    "be-tarask": [
+      "чалавек разумны"
+    ],
+    "yue": [
+      "人類"
+    ],
+    "sgs": [
+      "žmuonės",
+      "žmuogus"
+    ],
+    "rup": [
+      "Homo sapiens sapiens"
+    ],
+    "nan": [
+      "Lîn-lūi",
+      "Jîn-lūi",
+      "Homo sapiens"
+    ],
+    "nds-nl": [
+      "Mìnsk",
+      "Mens",
+      "Meens"
+    ],
+    "en-gb": [
+      "human being",
+      "person",
+      "humankind",
+      "people"
+    ],
+    "it": [
+      "uomo",
+      "Homo sapiens",
+      "essere umano",
+      "persona"
+    ],
+    "es": [
+      "humano",
+      "Homo sapiens sapiens",
+      "hombre",
+      "persona",
+      "seres humanos",
+      "personas",
+      "gente",
+      "raza humana",
+      "humanidad",
+      "Homo sapiens"
+    ],
+    "nl": [
+      "Homo sapiens"
+    ],
+    "ko": [
+      "인간",
+      "호모 사피엔스 사피엔스",
+      "인류",
+      "실존인물",
+      "인물"
+    ],
+    "ca": [
+      "Homo sapiens",
+      "H. sapiens",
+      "Homo sapiens sapiens",
+      "espècie humana",
+      "raça humana",
+      "home modern",
+      "animal racional",
+      "humà"
+    ],
+    "zh-hans": [
+      "智人",
+      "人"
+    ],
+    "zh-hant": [
+      "智人",
+      "人"
+    ],
+    "zh-cn": [
+      "人"
+    ],
+    "zh-sg": [
+      "智人",
+      "人"
+    ],
+    "zh": [
+      "人类",
+      "人"
+    ],
+    "zh-hk": [
+      "智人",
+      "人"
+    ],
+    "zh-tw": [
+      "人"
+    ],
+    "zh-mo": [
+      "智人",
+      "人"
+    ],
+    "fr": [
+      "humain",
+      "etre humain",
+      "Homme",
+      "Homo sapiens sapiens",
+      "Homo sapiens",
+      "espèce humaine",
+      "humaine"
+    ],
+    "nb": [
+      "Homo sapiens",
+      "Homo sapiens sapiens"
+    ],
+    "sv": [
+      "Homo sapiens",
+      "Homo sapiens sapiens"
+    ],
+    "he": [
+      "המין האנושי",
+      "בן אנוש",
+      "האדם הנבון",
+      "בן-אדם",
+      "הומו סאפיינס",
+      "בן אדם",
+      "אדם נבון",
+      "בנאדם",
+      "הומו ספיינס",
+      "הומו סאפיאנס",
+      "אדם מודרני",
+      "האדם המודרני",
+      "הומו ספיאנס",
+      "הומו ספייאנס",
+      "בת אנוש"
+    ],
+    "th": [
+      "Homo sapiens",
+      "โฮโมเซเปียนส์",
+      "มนุษยชาติ",
+      "คน"
+    ],
+    "fa": [
+      "آدم",
+      "بشر",
+      "خلق",
+      "مردم",
+      "کس",
+      "آدمیزاد",
+      "انس",
+      "ناس"
+    ],
+    "ta": [
+      "மனிதன்",
+      "ஓமோ சாப்பியன்",
+      "ஓமோ சப்பியென்சு",
+      "ஹோமோ சப்பியன்",
+      "ஓமோ சப்பியன்"
+    ],
+    "pt": [
+      "Homo sapiens",
+      "humano",
+      "pessoa"
+    ],
+    "ja": [
+      "ホモ・サピエンス・サピエンス",
+      "現生人類",
+      "ホモ・サピエンス"
+    ],
+    "ru": [
+      "землянин",
+      "неоантроп",
+      "личность",
+      "Homo sapiens",
+      "человек разумный",
+      "члк",
+      "ч"
+    ],
+    "fi": [
+      "homo sapiens"
+    ],
+    "cs": [
+      "Homo sapiens",
+      "člověk moudrý"
+    ],
+    "pt-br": [
+      "Homo sapiens"
+    ],
+    "vi": [
+      "loài người",
+      "con người"
+    ],
+    "scn": [
+      "omu"
+    ],
+    "rm": [
+      "carstgaun",
+      "esser uman"
+    ],
+    "gl": [
+      "Homo sapiens"
+    ],
+    "af": [
+      "menslike wese"
+    ],
+    "hi": [
+      "मानव",
+      "मानस",
+      "व्यक्ति",
+      "आदमी",
+      "औरत",
+      "मनुष्यता"
+    ],
+    "jv": [
+      "wong",
+      "tiyang",
+      "jalma"
+    ],
+    "lt": [
+      "Homo sapiens"
+    ],
+    "fo": [
+      "Homo sapiens"
+    ],
+    "ia": [
+      "esser human",
+      "persona",
+      "homine"
+    ],
+    "id": [
+      "orang"
+    ],
+    "new": [
+      "नरैः",
+      "मनुष्य",
+      "मनुष्याः",
+      "मनुष्याणां",
+      "मनुष्येषु",
+      "मनु"
+    ],
+    "sd": [
+      "انسان ذات",
+      "ماڻھو"
+    ],
+    "et": [
+      "Homo sapiens"
+    ],
+    "ast": [
+      "ser humanu",
+      "home",
+      "persona"
+    ],
+    "sq": [
+      "njeriu",
+      "njerëz",
+      "person"
+    ],
+    "ba": [
+      "әҙәм, бәндә, инсан, хомо сапиенс, аңлы йән эйәһе"
+    ],
+    "ky": [
+      "адам (киши)"
+    ],
+    "as": [
+      "মানৱ, নৰ"
+    ],
+    "uk": [
+      "людина розумна",
+      "особа",
+      "особистість",
+      "персона"
+    ],
+    "hr": [
+      "Ljudi",
+      "Homo sapiens",
+      "Ljudska vrsta",
+      "Homo",
+      "Čovječanstvo"
+    ],
+    "vls": [
+      "mins",
+      "miens"
+    ],
+    "eu": [
+      "pertsona",
+      "gizabanako"
+    ],
+    "or": [
+      "ମନୁଷ୍ୟ"
+    ],
+    "sw": [
+      "wanadamu"
+    ],
+    "hsb": [
+      "Homo sapiens"
+    ],
+    "da": [
+      "person",
+      "menneskeheden",
+      "folk",
+      "mennesker",
+      "Homo sapiens"
+    ],
+    "yo": [
+      "ènìyàn",
+      "èèyàn"
+    ],
+    "tcy": [
+      "ನರಮಾನಿ",
+      "ಮನುಸ್ಯೆ",
+      "ಪುರುಸೆ"
+    ],
+    "bn": [
+      "ব্যক্তি",
+      "মানব",
+      "মানবী"
+    ],
+    "tg-cyrl": [
+      "одам"
+    ],
+    "tr": [
+      "ademoğlu",
+      "adem evladı",
+      "homo sapiens",
+      "homosapiens"
+    ],
+    "mwl": [
+      "Houmano"
+    ],
+    "pa": [
+      "ਮਾਨਵ",
+      "ਬੰਦਾ",
+      "ਲੋਕ",
+      "ਵਿਅਕਤੀ"
+    ],
+    "gu": [
+      "માણસ"
+    ],
+    "te": [
+      "మనిషి"
+    ],
+    "en-ca": [
+      "human being",
+      "person"
+    ],
+    "ka": [
+      "კაცი"
+    ],
+    "hu": [
+      "ember"
+    ],
+    "cy": [
+      "person"
+    ],
+    "ms": [
+      "orang",
+      "insan",
+      "anak Adam"
+    ],
+    "atj": [
+      "Nehirowisiw"
+    ],
+    "bho": [
+      "मानव",
+      "आदमी"
+    ],
+    "ar": [
+      "انسان",
+      "بشر",
+      "شخص بشري",
+      "الإنسان"
+    ],
+    "gsw": [
+      "Homo sapiens",
+      "Person"
+    ],
+    "sr": [
+      "људско биће",
+      "људска врста",
+      "људи",
+      "хомо сапијенс",
+      "особа",
+      "човјек",
+      "човечанство"
+    ],
+    "sco": [
+      "body",
+      "human",
+      "person"
+    ]
+  },
+  "claims": {
+    "P527": [
+      "Q23852"
+    ],
+    "P1552": [
+      "Q202444",
+      "Q3577052",
+      "Q48277",
+      "Q101352",
+      "Q238372",
+      "Q1314553",
+      "Q641118"
+    ],
+    "P361": [
+      "Q1156970"
+    ],
+    "P1424": [
+      "Q6249834",
+      "Q20829728",
+      "Q25990294"
+    ],
+    "P1245": [
+      "2234"
+    ],
+    "P910": [
+      "Q6697530"
+    ],
+    "P646": [
+      "/m/0dgw9r"
+    ],
+    "P1343": [
+      "Q302556",
+      "Q602358",
+      "Q19180675",
+      "Q4173137",
+      "Q4086271"
+    ],
+    "P1709": [
+      "http://dbpedia.org/ontology/Person"
+    ],
+    "P1963": [
+      "P21",
+      "P569",
+      "P570",
+      "P25",
+      "P22",
+      "P40"
+    ],
+    "P227": [
+      "4038639-9"
+    ],
+    "P1417": [
+      "topic/human-being"
+    ],
+    "P2959": [
+      "Q22828631"
+    ],
+    "P3222": [
+      "människan"
+    ],
+    "P3417": [
+      "Humans"
+    ],
+    "P949": [
+      "000710772"
+    ],
+    "P1542": [
+      "Q16686448"
+    ],
+    "P3827": [
+      "humans"
+    ],
+    "P373": [
+      "People"
+    ],
+    "P2579": [
+      "Q23404"
+    ],
+    "P1056": [
+      "Q8205328",
+      "Q3619132"
+    ],
+    "P1051": [
+      "2693"
+    ],
+    "P2283": [
+      "Q8205328"
+    ],
+    "P460": [
+      "Q15978631"
+    ],
+    "P1225": [
+      "10639765"
+    ],
+    "P2888": [
+      "http://xmlns.com/foaf/spec/Person"
+    ],
+    "P2581": [
+      "00044576n"
+    ],
+    "P4733": [
+      "Q7390"
+    ],
+    "P4613": [
+      "59900"
+    ],
+    "P5008": [
+      "Q5460604"
+    ],
+    "P2521": [
+      "umana",
+      "ser humana",
+      "homino"
+    ],
+    "P3321": [
+      "homulo"
+    ],
+    "P5198": [
+      "294923772"
+    ],
+    "P1889": [
+      "Q2472587",
+      "Q95074"
+    ],
+    "P5869": [
+      "Q42",
+      "Q7186",
+      "Q762",
+      "Q7226",
+      "Q37151",
+      "Q43527",
+      "Q635"
+    ],
+    "P2670": [
+      "Q215627"
+    ],
+    "P279": [
+      "Q215627",
+      "Q154954"
+    ],
+    "P18": [
+      "Human.svg",
+      "Anterior view of human female and male, with labels.svg"
+    ],
+    "P3241": [
+      "12620b"
+    ],
+    "P1687": [
+      "P6150"
+    ],
+    "P5247": [
+      "3015-810"
+    ],
+    "P6332": [
+      "l-humain"
+    ],
+    "P5555": [
+      "Human.svg"
+    ],
+    "P6385": [
+      "biologiya/chelovek-razumnyi-homo-sapiens"
+    ],
+    "P6573": [
+      "Mensch"
+    ],
+    "P443": [
+      "LL-Q188 (deu)-Sebastian Wallroth-Mensch.wav"
+    ],
+    "P31": [
+      "Q55983715"
+    ]
+  },
+  "sitelinks": {
+    "acewiki": "Tokoh",
+    "afwiki": "Mens",
+    "alswiki": "Mensch",
+    "amwiki": "የሰው ልጅ",
+    "anwiki": "Humán",
+    "arcwiki": "ܒܪ ܐܢܫܐ",
+    "arwiki": "إنسان",
+    "arwikiquote": "الإنسان",
+    "arzwiki": "انسان",
+    "astwiki": "Humanu",
+    "aswiki": "মানুহ",
+    "avwiki": "ГӀадан",
+    "aywiki": "Jaqi",
+    "azbwiki": "اینسان",
+    "azwiki": "İnsan",
+    "azwikiquote": "İnsan",
+    "barwiki": "Mensch",
+    "bat_smgwiki": "Žmuogos",
+    "bawiki": "Кеше",
+    "bclwiki": "Tao",
+    "be_x_oldwiki": "Чалавек",
+    "bewiki": "Чалавек",
+    "bgwiki": "Човек",
+    "bhwiki": "मनुष्य",
+    "bnwiki": "মানুষ",
+    "bowiki": "འགྲོ་བ་མི།",
+    "brwiki": "Den",
+    "bswiki": "Čovjek",
+    "bswikiquote": "Čovjek",
+    "bxrwiki": "Ухаанта хүн",
+    "cawiki": "Humà",
+    "cdowiki": "Nè̤ng",
+    "cebwiki": "Tawo",
+    "cewiki": "Адам",
+    "ckbwiki": "مرۆڤ",
+    "cswiki": "Člověk moudrý",
+    "cswikiquote": "Člověk",
+    "cvwiki": "Тăнлă çын",
+    "cywiki": "Bod dynol",
+    "dawiki": "Menneske",
+    "dewiki": "Mensch",
+    "dewikiquote": "Mensch",
+    "diqwiki": "Merdum",
+    "dtywiki": "मान्सु",
+    "elwiki": "Άνθρωπος",
+    "elwikiquote": "Άνθρωπος",
+    "enwiki": "Human",
+    "eowiki": "Homo",
+    "eowikiquote": "Homo",
+    "eswiki": "Humano",
+    "eswikiquote": "Hombre",
+    "etwiki": "Inimene",
+    "etwikiquote": "Inimene",
+    "euwiki": "Gizaki",
+    "fawiki": "انسان",
+    "fawikiquote": "فطرت",
+    "fiu_vrowiki": "Inemine",
+    "fiwiki": "Ihminen",
+    "fiwikiquote": "Ihminen",
+    "fowiki": "Menniskja",
+    "frrwiki": "Minsk",
+    "furwiki": "Omp",
+    "fywiki": "Minske",
+    "ganwiki": "人",
+    "gawiki": "Duine",
+    "glkwiki": "آدم",
+    "glwiki": "Ser humano",
+    "glwikiquote": "Home",
+    "gnwiki": "Yvypóra",
+    "guwiki": "મનુષ્ય",
+    "hakwiki": "Ngìn",
+    "hawiki": "Ƴan'adam",
+    "hewiki": "אדם",
+    "hewikiquote": "אדם",
+    "hifwiki": "Insaan",
+    "hiwiki": "होमो सेपियन्स",
+    "hrwiki": "Čovjek",
+    "hrwikiquote": "Čovjek",
+    "htwiki": "Moun",
+    "huwiki": "Ember",
+    "huwikiquote": "Ember",
+    "hywiki": "Մարդ բանական",
+    "hywikiquote": "Մարդ",
+    "iawiki": "Homine",
+    "idwiki": "Manusia",
+    "igwiki": "Madụ̀",
+    "ilowiki": "Tao (sebbangan)",
+    "inhwiki": "Адам",
+    "iowiki": "Homo",
+    "iswiki": "Maður",
+    "itwikiquote": "Uomo",
+    "iuwiki": "ᐄᒃ",
+    "jamwiki": "Yuuman",
+    "jawiki": "ヒト",
+    "jbowiki": "remna",
+    "jvwiki": "Manungsa",
+    "kawiki": "ადამიანი",
+    "kgwiki": "Muntu",
+    "kkwiki": "Саналы адам",
+    "kmwiki": "មនុស្ស",
+    "knwiki": "ಮಾನವ",
+    "koiwiki": "Морт",
+    "kowiki": "사람",
+    "kowikiquote": "인간",
+    "kshwiki": "Minsh",
+    "kswiki": "اِنسان",
+    "kuwiki": "Mirov",
+    "kvwiki": "Морт",
+    "kwwiki": "Tus",
+    "kywiki": "Адам (киши)",
+    "lawiki": "Gens humana",
+    "lawikiquote": "Homo",
+    "lbewiki": "Инсан",
+    "lezwiki": "Кас",
+    "lfnwiki": "Umana",
+    "lgwiki": "Omuntu",
+    "lijwiki": "Ëse uman",
+    "liwiki": "Mins",
+    "lnwiki": "Moto",
+    "lowiki": "ມະນຸດ",
+    "ltgwiki": "Cylvāks",
+    "ltwiki": "Žmogus",
+    "ltwikiquote": "Žmogus",
+    "lvwiki": "Cilvēks",
+    "maiwiki": "लोग",
+    "map_bmswiki": "Tokoh",
+    "mdfwiki": "Ломанць",
+    "mgwiki": "Olombelona",
+    "mhrwiki": "Айдеме",
+    "minwiki": "Manusia",
+    "mkwiki": "Човек",
+    "mlwiki": "മനുഷ്യൻ",
+    "mnwiki": "Хүн",
+    "mrwiki": "मानव",
+    "mswiki": "Manusia",
+    "mtwiki": "Bniedem",
+    "mwlwiki": "Houmano",
+    "mywiki": "လူသား",
+    "nahwiki": "Tlacatl",
+    "nds_nlwiki": "Mense",
+    "newiki": "मानिस",
+    "newwiki": "मनू",
+    "nlwiki": "Mens",
+    "nlwikiquote": "Mens",
+    "nnwiki": "Menneske",
+    "nnwikiquote": "Menneske",
+    "nowiki": "Menneske",
+    "ocwiki": "Èsser uman",
+    "orwiki": "ମଣିଷ",
+    "oswiki": "Адæймаг",
+    "pamwiki": "Tau",
+    "pawiki": "ਮਨੁੱਖ",
+    "piwiki": "मनुस्सो",
+    "plwiki": "Człowiek rozumny",
+    "plwikiquote": "Człowiek",
+    "pmswiki": "Òm",
+    "pnbwiki": "انسان",
+    "pswiki": "انسان",
+    "ptwiki": "Humano",
+    "quwiki": "Runa",
+    "rmywiki": "Manush",
+    "roa_rupwiki": "Omu",
+    "rowiki": "Om",
+    "ruwiki": "Человек",
+    "ruwikinews": "Категория:Человек",
+    "ruwikiquote": "Человек",
+    "sahwiki": "Киhи",
+    "satwiki": "ᱢᱟᱹᱱᱢᱤ",
+    "sawiki": "मनुष्यः",
+    "scnwiki": "Umanu",
+    "scowiki": "Bodie",
+    "sdwiki": "انسان",
+    "sewiki": "Olmmoš",
+    "shwiki": "Čovjek",
+    "simplewiki": "Human",
+    "siwiki": "මිනිසා",
+    "skwiki": "Človek rozumný",
+    "skwikiquote": "Človek",
+    "slwiki": "Človek",
+    "slwikiquote": "Človek",
+    "sowiki": "Insaan",
+    "sqwiki": "Njeriu",
+    "srwiki": "Човек",
+    "srwikiquote": "Човек",
+    "suwiki": "Manusa",
+    "svwiki": "Människa",
+    "swwiki": "Binadamu",
+    "szlwiki": "Czowjek",
+    "tawiki": "மனிதர்",
+    "tewiki": "మానవుడు",
+    "tgwiki": "Инсон",
+    "thwiki": "มนุษย์",
+    "tlwiki": "Tao",
+    "trwiki": "İnsan",
+    "trwikiquote": "İnsan",
+    "tswiki": "Vanhu",
+    "ttwiki": "Акыллы кеше",
+    "ugwiki": "ئادەم",
+    "ukwiki": "Людина",
+    "ukwikiquote": "Людина",
+    "urwiki": "انسان",
+    "uzwiki": "Odam",
+    "vepwiki": "Ristit",
+    "viwiki": "Người",
+    "viwikiquote": "Tính nết",
+    "vlswiki": "Mens",
+    "warwiki": "Tawo",
+    "wawiki": "Djin (biyolodjeye)",
+    "wuuwiki": "人",
+    "xhwiki": "Abantu",
+    "xmfwiki": "ადამიერი",
+    "yiwiki": "מענטש",
+    "yowiki": "Ọmọnìyàn",
+    "zawiki": "Vunz",
+    "zh_classicalwiki": "人",
+    "zh_min_nanwiki": "Lâng",
+    "zh_yuewiki": "人",
+    "zhwiki": "人",
+    "zhwikiquote": "人",
+    "zuwiki": "Umuntu"
+  }
+}
