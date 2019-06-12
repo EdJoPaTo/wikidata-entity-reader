@@ -46,6 +46,10 @@ export default class WikidataEntityReader {
 			.map(o => getImageUrl(o, width));
 		return images;
 	}
+
+	unicodeChars(): readonly string[] {
+		return this.claim('P487');
+	}
 }
 
 // For CommonJS default export support
