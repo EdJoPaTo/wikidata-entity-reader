@@ -5,6 +5,7 @@ import test from 'ava';
 
 import WikidataEntityReader from '../source';
 
+const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8'));
 const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8'));
 
 const minimalEntity: EntitySimplified = {
@@ -104,4 +105,9 @@ test('images with width', t => {
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Human.svg?width=42',
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior view of human female and male, with labels.svg?width=42'
 	]);
+});
+
+test('unicodeChars', t => {
+	const reader = new WikidataEntityReader(entityCat);
+	t.deepEqual(reader.unicodeChars(), ['🐈', '🐱']);
 });

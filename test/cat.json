@@ -1,0 +1,1385 @@
+{
+  "id": "Q146",
+  "type": "item",
+  "modified": "2019-06-12T10:12:41Z",
+  "labels": {
+    "fr": "chat",
+    "pt-br": "gato",
+    "sv": "katt",
+    "szl": "kot",
+    "eu": "katu",
+    "pl": "kot domowy",
+    "bs": "mačka",
+    "ang": "catte",
+    "uz": "mushuk",
+    "st": "katse",
+    "oc": "Felis silvestris catus",
+    "srn": "puspusi",
+    "hu": "macska",
+    "sw": "Paka-kaya",
+    "sq": "macja",
+    "cdo": "mà",
+    "nso": "katse",
+    "mt": "qattus",
+    "am": "ድመት",
+    "ia": "Felis silvestris catus",
+    "ga": "cat",
+    "nl": "kat",
+    "eo": "hejma kato",
+    "yi": "קאץ",
+    "nrm": "cat",
+    "sr": "мачка",
+    "ckb": "پشیلە",
+    "uk": "кіт свійський",
+    "jbo": "mlatu",
+    "be-tarask": "кот",
+    "gan": "貓",
+    "pa": "ਬਿੱਲੀ",
+    "frp": "chat",
+    "sah": "куоска",
+    "rue": "мачка",
+    "sco": "cat",
+    "kv": "кань",
+    "ne": "बिरालो",
+    "az": "Ev pişiyi",
+    "bm": "jakuma",
+    "hr": "domaća mačka",
+    "lmo": "Felis silvestris catus",
+    "fur": "gjat",
+    "csb": "kòt",
+    "da": "kat",
+    "an": "Felis catus",
+    "vec": "gato",
+    "pms": "gat",
+    "gsw": "Huuschatze",
+    "lez": "Кац",
+    "udm": "коӵыш",
+    "nah": "Miztōn",
+    "arz": "قطه",
+    "be": "кот свойскі",
+    "he": "חתול הבית",
+    "lad": "Gato",
+    "yo": "ológbò",
+    "mdf": "ката",
+    "ay": "phisi",
+    "ml": "പൂച്ച",
+    "vi": "mèo",
+    "sc": "Felis",
+    "yue": "貓",
+    "wo": "muus",
+    "hsb": "domjaca kóčka",
+    "ht": "chat",
+    "gn": "mbarakaja",
+    "lzh": "貓",
+    "tg": "гурба",
+    "ku": "pisîk",
+    "sk": "mačka domáca",
+    "ext": "Felis silvestris catus",
+    "mn": "муур",
+    "th": "แมว",
+    "ca": "gat",
+    "fo": "Kettur",
+    "cy": "cath",
+    "cs": "kočka domácí",
+    "sgs": "katie",
+    "os": "гæды",
+    "mr": "मांजर",
+    "bg": "котка",
+    "arc": "ܩܛܐ",
+    "te": "పిల్లి",
+    "ur": "بلی",
+    "km": "ឆ្មា",
+    "zu": "ikati",
+    "gv": "kayt",
+    "lb": "Hauskaz",
+    "jv": "kucing",
+    "bo": "ཞི་མི།",
+    "qu": "Michi",
+    "gd": "cat",
+    "haw": "pōpoki",
+    "ta": "பூனை",
+    "af": "kat",
+    "ltg": "kačs",
+    "ms": "kucing",
+    "ceb": "iring",
+    "ce": "Cicig",
+    "to": "pusi",
+    "et": "kass",
+    "bn": "বিড়াল",
+    "chr": "ᏪᏌ",
+    "br": "kazh",
+    "rw": "Injangwe",
+    "el": "γάτα",
+    "na": "Butsi",
+    "bcl": "ikos",
+    "ss": "Likati",
+    "ba": "бесәй",
+    "pnb": "بلی",
+    "is": "köttur",
+    "ru": "кошка",
+    "xal": "Мис",
+    "ast": "gatu",
+    "tr": "kedi",
+    "sn": "katsi",
+    "se": "bussá",
+    "mk": "мачка",
+    "hak": "meu-é",
+    "stq": "Kat",
+    "myv": "Катка",
+    "si": "බළලා",
+    "nn": "katt",
+    "io": "kato",
+    "mzn": "بامشی",
+    "ln": "Nkɔ́ndɔkɔ́",
+    "tl": "pusa",
+    "nv": "mósí",
+    "kk": "мысық",
+    "nan": "niau",
+    "pam": "Pusa",
+    "wa": "tchet",
+    "ha": "kyanwa",
+    "so": "Yaanyuur",
+    "ko": "고양이",
+    "ug": "مۈشۈك",
+    "ks": "بیٲر",
+    "av": "Кето",
+    "lbe": "Ччиту",
+    "ace": "mië",
+    "bar": "Hauskotz",
+    "bug": "meong",
+    "eml": "Gàt",
+    "lv": "kaķis",
+    "gl": "gato",
+    "id": "kucing",
+    "sh": "mačka",
+    "koi": "Кань",
+    "scn": "gattu",
+    "cu": "котъ",
+    "hi": "बिल्ली",
+    "sd": "ٻلي",
+    "hy": "կատու",
+    "kn": "ಬೆಕ್ಕು",
+    "cv": "кушак",
+    "fy": "kat",
+    "ro": "pisică de casă",
+    "nds-nl": "kat",
+    "co": "ghjattu",
+    "vep": "Kaži",
+    "ilo": "pusa",
+    "mg": "saka",
+    "sl": "Domača mačka",
+    "war": "misay",
+    "mhr": "пырыс",
+    "fa": "گربه",
+    "ka": "შინაური კატა",
+    "pcd": "cot",
+    "dsb": "Domacna kócka",
+    "nds": "Katt",
+    "lt": "katė",
+    "vro": "kass",
+    "de": "Hauskatze",
+    "it": "gatto domestico",
+    "hif": "Pusi",
+    "en-ca": "cat",
+    "en-gb": "cat",
+    "ar": "قط",
+    "pt": "gato",
+    "la": "feles",
+    "fi": "kissa",
+    "zh": "家貓",
+    "ja": "ネコ",
+    "nb": "katt",
+    "de-ch": "Hauskatze",
+    "zh-hans": "猫",
+    "zh-hant": "家貓",
+    "tt": "мәче",
+    "new": "भौ",
+    "ps": "پيشو",
+    "sa": "मार्जालः",
+    "diq": "Pısıng",
+    "lo": "ແມວ",
+    "nov": "Felis silvestris catus",
+    "my": "ကြောင်",
+    "vls": "katte",
+    "su": "ucing",
+    "zh-hk": "貓",
+    "bxr": "миисгэй",
+    "kg": "Nyawu",
+    "mwl": "gato",
+    "lij": "Felis sylvestris catus",
+    "xh": "Ikati",
+    "ik": "Kitiuraq",
+    "wuu": "貓",
+    "rup": "câtuși",
+    "ak": "Agyinamoa",
+    "li": "hoeskat",
+    "ku-latn": "Pisîk",
+    "ee": "Dadzi",
+    "za": "meuz",
+    "as": "মেকুৰী",
+    "gu": "બિલાડી",
+    "sma": "gaahtoe",
+    "pag": "pusa",
+    "aeb-arab": "قطّوس",
+    "aeb-latn": "9a66ouc",
+    "ky": "Бакма мышыктар",
+    "tcy": "ಪುಚ್ಚೆ",
+    "kab": "amcic",
+    "tt-cyrl": "мәче",
+    "tt-latn": "mäçe",
+    "rm": "giat",
+    "gor": "Tete",
+    "kbp": "pɩyaʊ",
+    "rmy": "Magodja",
+    "jam": "Pus",
+    "min": "Kuciang",
+    "azb": "پیشیک",
+    "map-bms": "Felis catus",
+    "inh": "Циск",
+    "brh": "Felis catus",
+    "ban": "Felis catus",
+    "atj": "minoc",
+    "lfn": "gato",
+    "frr": "kaat",
+    "bjn": "Felis catus",
+    "olo": "Kaži",
+    "glk": "پیچا",
+    "ab": "Ацгәы",
+    "sat": "ᱯᱩᱥᱤ",
+    "bho": "बिलार",
+    "vo": "kat",
+    "en": "house cat",
+    "es": "gato",
+    "kw": "kath",
+    "shn": "မႅဝ်း",
+    "got": "𐌺𐌰𐍄𐍄𐌿𐍃",
+    "hyw": "Կատուներ"
+  },
+  "descriptions": {
+    "fr": "espèce de mammifères",
+    "de": "domestizierte Katze",
+    "it": "mammifero carnivoro della famiglia dei felidi",
+    "nb": "pattedyr",
+    "ru": "домашнее животное",
+    "ca": "petit mamífer carnívor domèstic",
+    "fi": "Kissaeläinten heimoon kuuluva yleinen lemmikkieläin",
+    "ilo": "napaamo a sebbangan ti pusa",
+    "pt-br": "espécie domesticada de felino",
+    "ta": "பாலூட்டி விலங்கு",
+    "fa": "جانوری اهلی از خانواده گربه سانان",
+    "nl": "dier",
+    "en-ca": "domesticated species of feline",
+    "pt": "espécie domesticada de felino",
+    "mk": "домашно животно",
+    "ja": "ネコ目ネコ科ネコ属に分類される小型哺乳類",
+    "zh-hans": "小型猫科动物，野猫的亚种",
+    "id": "binatang",
+    "uk": "невеликий ссавець ряду хижих (Carnivora) родини котових (Felidae)",
+    "hu": "macskafélék családjába tartozó, háziasított emlősalfaj",
+    "la": "Feles domesticus, parvus carnivorus e familia Felidarum",
+    "da": "huskat",
+    "scn": "specia dumèstica di filinu",
+    "sr": "домаћа животиња",
+    "ro": "pisică domesticită, specie de feline",
+    "ne": "feline को घरेलु प्रजाति",
+    "gu": "એક પ્રકારનું પાલતુ પાણી",
+    "ko": "포유류에 속하는 동물이다. 일반적으로 고양이는 길들여진 집고양이(domestic cat)를 말한다.",
+    "sv": "däggdjur",
+    "el": "κατοικίδιο ζώο",
+    "bg": "домашно животно",
+    "pl": "gatunek ssaka",
+    "ml": "മനുഷ്യർ വളർത്തുന്ന ഒരു ഓമനമൃഗമാണ്‌ പൂച്ച (ഇംഗ്ലീഷ്: Cat/House Cat, ശാസ്ത്രീയനാമം: ഫെലിസ് കാതുസ് - Felis catus) എലിയെ പിടിക്കുവാനും കൂട്ടിനുമായാണ് പൂച്ചയെ വളർത്തുന്നത്",
+    "lv": "mājdzīvnieks",
+    "ar": "حيوان من فصيلة السنوريات تم تدجينه من طرف الإنسان",
+    "cs": "domestikovaná kočkovitá šelma",
+    "tt-cyrl": "йорт хайваны",
+    "tt-latn": "yort xaywanı",
+    "tt": "йорт хайваны",
+    "hi": "बिल्ली के बारे में",
+    "gl": "mamífero doméstico da familia dos felinos",
+    "th": "สัตว์ชนิดหนึ่ง",
+    "tr": "evcilleştirilen kedi cinsi",
+    "jv": "kewan",
+    "sk": "domestikovaný poddruh mačky divej",
+    "he": "בעל חיים ממשפחת החתוליים",
+    "vi": "vật nuôi trong nhà",
+    "af": "troeteldier",
+    "en": "domesticated feline",
+    "es": "especie doméstica de felino",
+    "zh": "小型猫科动物，野貓的亞種",
+    "bn": "স্তন্যপায়ী প্রাণী",
+    "zh-hant": "小型貓科動物，野貓的亞種",
+    "min": "binatang"
+  },
+  "aliases": {
+    "sv": [
+      "Semesterkatt",
+      "Tamkatt",
+      "Kattungar",
+      "Katten",
+      "Kissemiss",
+      "Felis silvestris catus",
+      "Katter",
+      "Källing",
+      "Felis catus",
+      "Kissekatt",
+      "Kattraser",
+      "Kattunge",
+      "Kattöra",
+      "Kattras",
+      "FIP",
+      "Sommarkatt"
+    ],
+    "eu": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "etxe katu",
+      "katua",
+      "etxeko katu"
+    ],
+    "pl": [
+      "Felis catus",
+      "Felis silvestris catus"
+    ],
+    "bs": [
+      "Domaća mačka"
+    ],
+    "es": [
+      "Felis catus",
+      "minino",
+      "gato doméstico",
+      "Felis silvestris catus",
+      "gata",
+      "michu",
+      "mopo",
+      "gato domestico"
+    ],
+    "oc": [
+      "Chat domestic",
+      "Cat",
+      "Chats",
+      "Chat",
+      "Cat domestic",
+      "Gat domestic",
+      "Gat",
+      "Gats"
+    ],
+    "hu": [
+      "Felis silvestris catus",
+      "házi macska",
+      "cica"
+    ],
+    "sw": [
+      "Felis catus",
+      "Felis silvestris catus"
+    ],
+    "sq": [
+      "Maca",
+      "Felis catus"
+    ],
+    "cdo": [
+      "Mà-giāng"
+    ],
+    "ia": [
+      "Catto domestic"
+    ],
+    "ga": [
+      "Cat clóis"
+    ],
+    "nl": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "Felis silvestris f. catus",
+      "Felis sylvestris catus",
+      "huiskat",
+      "poezen",
+      "poes",
+      "de poes"
+    ],
+    "sr": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "Felis ocreata domestica",
+      "маца",
+      "мујис",
+      "мачка кућна",
+      "кућна мачка",
+      "мачка домаћа",
+      "домаћа мачка",
+      "мачке",
+      "маце",
+      "мачак"
+    ],
+    "uk": [
+      "Кицька",
+      "Felis silvestris catus",
+      "Свійський кіт",
+      "Felis catus",
+      "Свійська кішка",
+      "Домашня кішка"
+    ],
+    "be-tarask": [
+      "Котка"
+    ],
+    "sah": [
+      "Felis catus",
+      "Мааска"
+    ],
+    "ne": [
+      "विरालो"
+    ],
+    "az": [
+      "Felis silvestris catus",
+      "Felis catus domestica",
+      "Felis domestica",
+      "Felis catus"
+    ],
+    "hr": [
+      "Mačka",
+      "Mačak",
+      "Kućna mačka",
+      "Felis silvestris catus"
+    ],
+    "lmo": [
+      "Gat",
+      "Gàt",
+      "Gatt"
+    ],
+    "fur": [
+      "Felis catus"
+    ],
+    "da": [
+      "Felis silvestris catus",
+      "Felis domestica",
+      "hankat",
+      "huskat",
+      "katten"
+    ],
+    "an": [
+      "Gato",
+      "Felis domesticus",
+      "Felis silvestris catus",
+      "Catus",
+      "Mixino",
+      "Mixíno"
+    ],
+    "vec": [
+      "Felis silvestris catus"
+    ],
+    "gsw": [
+      "Katze"
+    ],
+    "udm": [
+      "Писей",
+      "Felis catus",
+      "Felis silvestris catus"
+    ],
+    "nah": [
+      "Miztōntli",
+      "Mizton",
+      "Gato"
+    ],
+    "arz": [
+      "قطة",
+      "بسه"
+    ],
+    "be": [
+      "Кот",
+      "Felis silvestris catus",
+      "Котка",
+      "Felis catus",
+      "Кошка"
+    ],
+    "he": [
+      "חתלתול",
+      "Felis silvestris catus",
+      "Felis",
+      "חתול בית",
+      "חתול"
+    ],
+    "lad": [
+      "Felis Silvestris Catus"
+    ],
+    "yo": [
+      "Felis catus",
+      "Ológìnní"
+    ],
+    "ml": [
+      "നാട്ടുപൂച്ച",
+      "നാട്ടുപൂച്ച‍",
+      "Cat"
+    ],
+    "vi": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "con mèo",
+      "mèo con",
+      "mèo nhà"
+    ],
+    "sc": [
+      "Battu,'attu"
+    ],
+    "yue": [
+      "猫",
+      "Felis silvestris catus",
+      "家貓"
+    ],
+    "hsb": [
+      "Kóčka domjaca",
+      "Felis silvestris catus"
+    ],
+    "lzh": [
+      "猫"
+    ],
+    "tg": [
+      "Пишак"
+    ],
+    "ku": [
+      "Pisîkan"
+    ],
+    "ext": [
+      "Gatu"
+    ],
+    "mn": [
+      "Гэрийн муур"
+    ],
+    "th": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "แมววิลาศ",
+      "แมวเลี้ยง",
+      "แมวบ้าน",
+      "วิฬาร",
+      "วิฬาร์"
+    ],
+    "ca": [
+      "Felis silvestris catus",
+      "Moix",
+      "Gat esgarrapador",
+      "Gates femelles",
+      "Felis domesticus",
+      "Gat domèstic",
+      "Gats",
+      "Gat amb classe"
+    ],
+    "cs": [
+      "Felis silvestris f. catus",
+      "Felis catus",
+      "kočka"
+    ],
+    "os": [
+      "Felis catus",
+      "Тикис",
+      "Felis silvestris catus"
+    ],
+    "mr": [
+      "घरगुती मांजर"
+    ],
+    "bg": [
+      "Felis catus",
+      "Felis silvestris catus",
+      "Домашна котка"
+    ],
+    "arc": [
+      "ܩܛܘܢܬܐ",
+      "ܩܛܘܢܐ",
+      "ܩܛܘ"
+    ],
+    "te": [
+      "పిల్లులు",
+      "మార్జాలం"
+    ],
+    "zu": [
+      "Felis catus"
+    ],
+    "gv": [
+      "Screeberagh",
+      "Kayt thieoil",
+      "Screeberey"
+    ],
+    "bo": [
+      "ཞི་མི",
+      "ཞི་མི་"
+    ],
+    "qu": [
+      "Gato",
+      "Felis silvestris catus",
+      "Misi",
+      "Mishi"
+    ],
+    "af": [
+      "Felis catus",
+      "Felis silvestris catus"
+    ],
+    "ltg": [
+      "Sātys kačs"
+    ],
+    "ce": [
+      "Цициг"
+    ],
+    "to": [
+      "Felis catus",
+      "Felis silvestris",
+      "Felis domesticus"
+    ],
+    "et": [
+      "Kodukass",
+      "Felis silvestris catus",
+      "Felis catus",
+      "Kiisu"
+    ],
+    "chr": [
+      "ᏪᏏ",
+      "ᏪᏍ",
+      "Cat"
+    ],
+    "br": [
+      "Kazh doñv"
+    ],
+    "rw": [
+      "Ipusi",
+      "Felis catus"
+    ],
+    "el": [
+      "Γατάκι",
+      "Γαλή",
+      "Γατί",
+      "Felis catus"
+    ],
+    "is": [
+      "Felis silvestris catus",
+      "Kisa",
+      "Húnköttur",
+      "Heimilisköttur",
+      "Læða",
+      "Húsköttur",
+      "Fress",
+      "Búköttur",
+      "Kisi"
+    ],
+    "ru": [
+      "Felis silvestris catus",
+      "Felis silvestris forma catus",
+      "Felis catus",
+      "Felis catus domestica",
+      "кот",
+      "кошки",
+      "домашняя кошка",
+      "кошка домашняя",
+      "котёнок",
+      "коты"
+    ],
+    "ast": [
+      "Felis domesticus",
+      "Felis silvestris catus",
+      "Catus"
+    ],
+    "tr": [
+      "Ev kedisi",
+      "Kedilerin özellikleri"
+    ],
+    "sn": [
+      "Kat",
+      "Mangoyi",
+      "Kato"
+    ],
+    "se": [
+      "Gáhttu"
+    ],
+    "myv": [
+      "Псака"
+    ],
+    "si": [
+      "පූසා",
+      "බළලා හෙවත් පූසා"
+    ],
+    "nn": [
+      "Tamkatt",
+      "Katter",
+      "Kattungar",
+      "Huskatt",
+      "Kattunger",
+      "Katten",
+      "Kattar"
+    ],
+    "ln": [
+      "Nyáo",
+      "Púsu"
+    ],
+    "tl": [
+      "F. catus",
+      "Felis silvestris",
+      "Mga pusa",
+      "Felis silvestris catus",
+      "F. s. catus",
+      "F. silvestris",
+      "Felis catus",
+      "Iring",
+      "Ireng"
+    ],
+    "nv": [
+      "Gídí",
+      "Másí"
+    ],
+    "kk": [
+      "Мысықтар"
+    ],
+    "nan": [
+      "Bâ-á",
+      "Niau-á",
+      "Ka-niau",
+      "Bâ"
+    ],
+    "wa": [
+      "Felis catus"
+    ],
+    "ha": [
+      "Felis catus"
+    ],
+    "so": [
+      "Bisad"
+    ],
+    "ko": [
+      "도둑고양이",
+      "집고양이",
+      "길고양이"
+    ],
+    "av": [
+      "Felis catus"
+    ],
+    "lbe": [
+      "Felis catus"
+    ],
+    "ace": [
+      "Felis catus"
+    ],
+    "bar": [
+      "Kåtzn",
+      "Katze",
+      "Katzn",
+      "Katzen",
+      "Kotz",
+      "Kåtz",
+      "Katz"
+    ],
+    "eml": [
+      "Gat",
+      "Felis catus"
+    ],
+    "lv": [
+      "Felis silvestris catus",
+      "Mājas kaķis",
+      "Felis catus",
+      "Runcis",
+      "Kaķene"
+    ],
+    "gl": [
+      "Felis silvestris catus"
+    ],
+    "sh": [
+      "Domaća mačka"
+    ],
+    "koi": [
+      "Felis catus"
+    ],
+    "scn": [
+      "jatta",
+      "jattu",
+      "iattu",
+      "attu"
+    ],
+    "cu": [
+      "Ко́тъ"
+    ],
+    "hi": [
+      "बिल्लियाँ"
+    ],
+    "sd": [
+      "ېلي"
+    ],
+    "hy": [
+      "Ընտանի կատու",
+      "Felis catus",
+      "Կատուներ"
+    ],
+    "fy": [
+      "Boarre"
+    ],
+    "ro": [
+      "Pisici",
+      "Mâță",
+      "Pisica",
+      "Felis silvestris",
+      "Pisica de casă",
+      "pisică domestică"
+    ],
+    "nds-nl": [
+      "Katte"
+    ],
+    "co": [
+      "Gattu"
+    ],
+    "ilo": [
+      "Cat"
+    ],
+    "sl": [
+      "Felis silvestris catus",
+      "Domače mačke"
+    ],
+    "war": [
+      "Uding",
+      "Udíng"
+    ],
+    "mhr": [
+      "Felis catus"
+    ],
+    "fa": [
+      "پیشی",
+      "گربهٔ اهلی",
+      "گربه اهلی",
+      "پشک",
+      "نماد جهانی ایران",
+      "گربۀ ایرانی"
+    ],
+    "pcd": [
+      "Felis catus",
+      "Cat"
+    ],
+    "dsb": [
+      "Felis silvestris catus"
+    ],
+    "nds": [
+      "Kater",
+      "Bolzen"
+    ],
+    "lt": [
+      "Naminė katė",
+      "Felis silvestris catus",
+      "Katės"
+    ],
+    "it": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "gatto"
+    ],
+    "nb": [
+      "tamkatt",
+      "Felis silvestris catus",
+      "Felis catus",
+      "huskatt",
+      "pusekatt",
+      "kattepus",
+      "pus"
+    ],
+    "de": [
+      "Katze",
+      "Felis silvestris catus"
+    ],
+    "fi": [
+      "kesykissa",
+      "kotikissa",
+      "Felis catus",
+      "Felis silvestris catus",
+      "Felis catus domestica"
+    ],
+    "pt-br": [
+      "Felis silvestris catus",
+      "gato caseiro",
+      "gato urbano",
+      "gato doméstico"
+    ],
+    "pt": [
+      "Felis silvestris catus"
+    ],
+    "fr": [
+      "Felis silvestris catus",
+      "Felis catus",
+      "chat domestique",
+      "chaton",
+      "chatte"
+    ],
+    "ja": [
+      "猫",
+      "イエネコ",
+      "ねこ"
+    ],
+    "eo": [
+      "kato"
+    ],
+    "ak": [
+      ")kra"
+    ],
+    "tt-cyrl": [
+      "песи"
+    ],
+    "tt-latn": [
+      "pesi"
+    ],
+    "tt": [
+      "песи"
+    ],
+    "id": [
+      "Felis catus"
+    ],
+    "bug": [
+      "Felis catus"
+    ],
+    "jv": [
+      "Felis catus"
+    ],
+    "ms": [
+      "Felis catus"
+    ],
+    "su": [
+      "Felis catus"
+    ],
+    "sk": [
+      "mačka",
+      "cica"
+    ],
+    "en": [
+      "housecat",
+      "cat",
+      "domestic cat"
+    ],
+    "zh": [
+      "貓",
+      "貓咪"
+    ],
+    "zh-hant": [
+      "貓",
+      "貓咪"
+    ],
+    "min": [
+      "Felis catus"
+    ]
+  },
+  "claims": {
+    "P487": [
+      "🐈",
+      "🐱"
+    ],
+    "P227": [
+      "4030046-8"
+    ],
+    "P508": [
+      "3206"
+    ],
+    "P910": [
+      "Q5615807"
+    ],
+    "P18": [
+      "Pumiforme.JPG"
+    ],
+    "P646": [
+      "/m/01yrx"
+    ],
+    "P1036": [
+      "636.8",
+      "599.752"
+    ],
+    "P1051": [
+      "887"
+    ],
+    "P366": [
+      "Q39201"
+    ],
+    "P1542": [
+      "Q1736897"
+    ],
+    "P2167": [
+      "10101501"
+    ],
+    "P1014": [
+      "300265960"
+    ],
+    "P1417": [
+      "animal/cat"
+    ],
+    "P3063": [
+      64
+    ],
+    "P3219": [
+      "chat-domestique"
+    ],
+    "P3221": [
+      "subject/cats"
+    ],
+    "P3395": [
+      125,
+      130
+    ],
+    "P3417": [
+      "Cats"
+    ],
+    "P3485": [
+      58
+    ],
+    "P3387": [
+      45
+    ],
+    "P3465": [
+      64000
+    ],
+    "P3827": [
+      "cats"
+    ],
+    "P279": [
+      "Q57814795",
+      "Q39201"
+    ],
+    "P1552": [
+      "Q3454738",
+      "Q170430",
+      "Q14404836"
+    ],
+    "P1225": [
+      "10647397"
+    ],
+    "P902": [
+      "41559"
+    ],
+    "P2581": [
+      "00016606n"
+    ],
+    "P580": [
+      "-008000-01-01T00:00:00.000Z"
+    ],
+    "P4733": [
+      "Q3307942",
+      "Q662750"
+    ],
+    "P2924": [
+      "4421180"
+    ],
+    "P1343": [
+      "Q1138524",
+      "Q4086271",
+      "Q1970746",
+      "Q602358",
+      "Q19180675"
+    ],
+    "P3984": [
+      "cats"
+    ],
+    "P2250": [
+      15
+    ],
+    "P5008": [
+      "Q5460604"
+    ],
+    "P51": [
+      "Meow.ogg"
+    ],
+    "P268": [
+      "12266539w"
+    ],
+    "P5395": [
+      "cat"
+    ],
+    "P443": [
+      "LL-Q8752 (eus)-Xabier Cañas-katu.wav"
+    ],
+    "P5250": [
+      "424"
+    ],
+    "P2347": [
+      "19378"
+    ],
+    "P6573": [
+      "Hauskatze",
+      "Katzen"
+    ],
+    "P244": [
+      "sh85021262"
+    ],
+    "P4212": [
+      "pcrtBEscNJUhBp"
+    ],
+    "P935": [
+      "Felis silvestris catus"
+    ],
+    "P373": [
+      "Felis silvestris catus"
+    ],
+    "P5397": [
+      "6992"
+    ],
+    "P3321": [
+      "tomcat",
+      "Kater"
+    ],
+    "P2716": [
+      "Collage of Six Cats-01.jpg"
+    ],
+    "P31": [
+      "Q55983715"
+    ],
+    "P6760": [
+      "7263"
+    ]
+  },
+  "sitelinks": {
+    "abwiki": "Ацгәы",
+    "afwiki": "Kat",
+    "alswiki": "Hauskatze",
+    "amwiki": "ድመት",
+    "angwiki": "Catte",
+    "anwiki": "Felis silvestris catus",
+    "arcwiki": "ܩܛܐ",
+    "arwiki": "قط",
+    "arzwiki": "قطه",
+    "astwiki": "Felis silvestris catus",
+    "aswiki": "মেকুৰী",
+    "atjwiki": "Minoc",
+    "avwiki": "Кето",
+    "aywiki": "Phisi",
+    "azbwiki": "پیشیک",
+    "azwiki": "Ev pişiyi",
+    "barwiki": "Hauskotz",
+    "bat_smgwiki": "Katie",
+    "bawiki": "Бесәй",
+    "bclwiki": "Ikos",
+    "be_x_oldwiki": "Кот",
+    "bewiki": "Кот свойскі",
+    "bgwiki": "Котка",
+    "bhwiki": "बिलार",
+    "bmwiki": "Jakuma",
+    "bnwiki": "বিড়াল",
+    "bowiki": "ཞི་མི།",
+    "brwiki": "Kazh",
+    "bswiki": "Mačka",
+    "bswikiquote": "Mačka",
+    "bugwiki": "Meong",
+    "bxrwiki": "Миисгэй",
+    "cawiki": "Gat",
+    "cawikiquote": "Gat",
+    "cdowiki": "Mà",
+    "cebwiki": "Iring",
+    "cewiki": "Цициг",
+    "chrwiki": "ᏪᏌ",
+    "ckbwiki": "پشیلە",
+    "cowiki": "Ghjattu",
+    "csbwiki": "Kòt",
+    "cswiki": "Kočka domácí",
+    "cswikiquote": "Kočka",
+    "cuwiki": "Котъ",
+    "cvwiki": "Кушак",
+    "cywiki": "Cath",
+    "dawiki": "Kat",
+    "dewiki": "Hauskatze",
+    "dewikiquote": "Katze",
+    "dewikisource": "Katzen",
+    "diqwiki": "Pısıng",
+    "dsbwiki": "Domacna kócka",
+    "elwiki": "Γάτα",
+    "emlwiki": "Gàt",
+    "enwiki": "Cat",
+    "enwikiquote": "Cats",
+    "eowiki": "Hejma kato",
+    "eowikiquote": "Kato",
+    "eswiki": "Felis silvestris catus",
+    "eswikiquote": "Gato",
+    "etwiki": "Kass",
+    "euwiki": "Katu",
+    "extwiki": "Felis silvestris catus",
+    "fawiki": "گربه",
+    "fawikiquote": "گربه",
+    "fiu_vrowiki": "Kass",
+    "fiwiki": "Kissa",
+    "fowiki": "Kettur",
+    "frpwiki": "Chat",
+    "frrwiki": "Kaat",
+    "frwiki": "Chat",
+    "frwikiquote": "Chat",
+    "furwiki": "Gjat",
+    "fywiki": "Kat",
+    "ganwiki": "貓",
+    "gawiki": "Cat",
+    "gdwiki": "Cat",
+    "glkwiki": "پیچا",
+    "glwiki": "Gato",
+    "gnwiki": "Mbarakaja",
+    "gorwiki": "Tete",
+    "gotwiki": "𐌺𐌰𐍄𐍄𐌿𐍃",
+    "gvwiki": "Kayt",
+    "hakwiki": "Meu-é",
+    "hawiki": "Kyanwa",
+    "hawwiki": "Pōpoki",
+    "hewiki": "חתול הבית",
+    "hewikiquote": "חתול",
+    "hifwiki": "Pusi",
+    "hiwiki": "बिल्ली",
+    "hrwiki": "Domaća mačka",
+    "hrwikiquote": "Mačke",
+    "hsbwiki": "Domjaca kóčka",
+    "htwiki": "Chat",
+    "huwiki": "Macska",
+    "huwikiquote": "Macska",
+    "hywiki": "Կատուներ",
+    "hywikiquote": "Կատու",
+    "hywwiki": "Կատուներ",
+    "iawiki": "Catto domestic",
+    "idwiki": "Kucing",
+    "ikwiki": "Kitiuraq",
+    "ilowiki": "Pusa",
+    "inhwiki": "Циск",
+    "iowiki": "Kato",
+    "iswiki": "Köttur",
+    "itwiki": "Felis silvestris catus",
+    "itwikiquote": "Gatto",
+    "jamwiki": "Pus",
+    "jawiki": "ネコ",
+    "jawikiquote": "猫",
+    "jbowiki": "mlatu",
+    "jvwiki": "Kucing",
+    "kabwiki": "Amcic",
+    "kawiki": "შინაური კატა",
+    "kbpwiki": "Pɩyaʊ",
+    "kgwiki": "Nyawu",
+    "kkwiki": "Мысық",
+    "kmwiki": "ឆ្មា",
+    "knwiki": "ಬೆಕ್ಕು",
+    "koiwiki": "Кань",
+    "kowiki": "고양이",
+    "kowikiquote": "고양이",
+    "kswiki": "بیٲر",
+    "kuwiki": "Pisîk",
+    "kvwiki": "Кань",
+    "kwwiki": "Kath",
+    "kywiki": "Мышык",
+    "ladwiki": "Gato",
+    "lawiki": "Feles",
+    "lbewiki": "Ччиту",
+    "lbwiki": "Hauskaz",
+    "lezwiki": "Кац",
+    "lfnwiki": "Gato",
+    "lijwiki": "Felis sylvestris catus",
+    "liwiki": "Hoeskat",
+    "lmowiki": "Felis silvestris catus",
+    "lnwiki": "Nkɔ́ndɔkɔ́",
+    "lowiki": "ແມວ",
+    "ltgwiki": "Kačs",
+    "ltwiki": "Katė",
+    "ltwikiquote": "Katė",
+    "lvwiki": "Kaķis",
+    "mdfwiki": "Ката",
+    "mgwiki": "Saka",
+    "mhrwiki": "Пырыс",
+    "minwiki": "Kuciang",
+    "mkwiki": "Мачка",
+    "mlwiki": "പൂച്ച",
+    "mlwikiquote": "പൂച്ച",
+    "mnwiki": "Муур",
+    "mrwiki": "मांजर",
+    "mswiki": "Kucing",
+    "mtwiki": "Qattus",
+    "mwlwiki": "Gato",
+    "myvwiki": "Катка",
+    "mywiki": "ကြောင် (တိရစ္ဆာန်)",
+    "mznwiki": "بامشی",
+    "nahwiki": "Mizton",
+    "nawiki": "Butsi",
+    "nds_nlwiki": "Kat",
+    "ndswiki": "Katt",
+    "newiki": "बिरालो",
+    "newwiki": "भौ",
+    "nlwiki": "Kat (dier)",
+    "nnwiki": "Katt",
+    "nnwikiquote": "Kattar",
+    "novwiki": "Felis silvestris catus",
+    "nowiki": "Tamkatt",
+    "nrmwiki": "Cat",
+    "nsowiki": "Katse",
+    "nvwiki": "Mósí",
+    "ocwiki": "Felis silvestris catus",
+    "olowiki": "Kaži",
+    "oswiki": "Гæды",
+    "pamwiki": "Pusa",
+    "pawiki": "ਬਿੱਲੀ",
+    "pcdwiki": "Cot",
+    "plwiki": "Kot domowy",
+    "plwikiquote": "Kot",
+    "pmswiki": "Gat",
+    "pnbwiki": "بلی",
+    "pswiki": "پيشو",
+    "ptwiki": "Gato",
+    "ptwikiquote": "Gato",
+    "quwiki": "Michi",
+    "rmwiki": "Giat",
+    "rmywiki": "Magodja",
+    "roa_rupwiki": "Câtuși",
+    "rowiki": "Pisică de casă",
+    "ruewiki": "Мачка",
+    "ruwiki": "Кошка",
+    "ruwikiquote": "Кошка",
+    "rwwiki": "Injangwe",
+    "sahwiki": "Куоска",
+    "satwiki": "ᱯᱩᱥᱤ",
+    "sawiki": "मार्जालः",
+    "scnwiki": "Jattu",
+    "scowiki": "Cat",
+    "scwiki": "Felis",
+    "sdwiki": "ٻلي",
+    "sewiki": "Bussá",
+    "shnwiki": "မႅဝ်း",
+    "shwiki": "Mačka",
+    "simplewiki": "Cat",
+    "siwiki": "බළලා",
+    "skwiki": "Mačka domáca",
+    "skwikiquote": "Mačka",
+    "slwiki": "Domača mačka",
+    "slwikiquote": "Mačka",
+    "snwiki": "Katsi",
+    "sowiki": "Yaanyuur",
+    "sqwiki": "Macja",
+    "srnwiki": "Puspusi",
+    "srwiki": "Мачка",
+    "srwikiquote": "Mačka",
+    "sswiki": "Likati",
+    "stqwiki": "Kat",
+    "stwiki": "Katse",
+    "suwiki": "Ucing",
+    "svwiki": "Katt",
+    "swwiki": "Paka-kaya",
+    "szlwiki": "Kot",
+    "tawiki": "பூனை",
+    "tcywiki": "ಪುಚ್ಚೆ",
+    "tewiki": "పిల్లి",
+    "tgwiki": "Гурба",
+    "thwiki": "แมว",
+    "thwikibooks": "แมว",
+    "tlwiki": "Pusa",
+    "towiki": "Pusi",
+    "trwiki": "Kedi",
+    "trwikiquote": "Kedi",
+    "ttwiki": "Мәче",
+    "udmwiki": "Коӵыш",
+    "ugwiki": "مۈشۈك",
+    "ukwiki": "Кіт свійський",
+    "ukwikiquote": "Кішка",
+    "urwiki": "بلی",
+    "urwikiquote": "بلی",
+    "uzwiki": "Mushuk",
+    "vecwiki": "Gato",
+    "vepwiki": "Kaži",
+    "viwiki": "Mèo",
+    "vlswiki": "Katte",
+    "vowiki": "Kat",
+    "warwiki": "Misay",
+    "wawiki": "Tchet",
+    "wowiki": "Muus",
+    "wuuwiki": "貓",
+    "xalwiki": "Мис",
+    "xhwiki": "Ikati",
+    "yiwiki": "קאץ",
+    "yowiki": "Ológbò",
+    "zawiki": "Meuz",
+    "zh_classicalwiki": "貓",
+    "zh_min_nanwiki": "Niau",
+    "zh_yuewiki": "貓",
+    "zhwiki": "猫",
+    "zhwikibooks": "貓",
+    "zuwiki": "Ikati"
+  }
+}
