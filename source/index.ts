@@ -2,7 +2,7 @@ import {getImageUrl, EntitySimplified} from 'wikidata-sdk';
 
 export default class WikidataEntityReader {
 	constructor(
-		private entity: EntitySimplified,
+		public entity: EntitySimplified,
 		private defaultLanguageCode: string = 'en'
 	) { }
 
