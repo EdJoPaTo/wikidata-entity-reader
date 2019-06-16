@@ -1,6 +1,6 @@
 {
 	"name": "wikidata-entity-reader",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "read information of wikidata entities in a simpler way",
 	"license": "MIT",
 	"repository": "EdJoPaTo/wikidata-entity-reader",
