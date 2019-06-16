@@ -73,6 +73,21 @@ test('url', t => {
 	t.is(reader.url(), 'https://www.wikidata.org/wiki/Q5');
 });
 
+test('allClaims', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.allClaims(), [
+		'P527', 'P1552', 'P361', 'P1424', 'P1245', 'P910', 'P646', 'P1343', 'P1709', 'P1963', 'P227', 'P1417', 'P2959', 'P3222', 'P3417', 'P949', 'P1542', 'P3827', 'P373', 'P2579', 'P1056', 'P1051', 'P2283', 'P460', 'P1225', 'P2888', 'P2581', 'P4733', 'P4613', 'P5008', 'P2521', 'P3321', 'P5198', 'P1889', 'P5869', 'P2670', 'P279', 'P18', 'P3241', 'P1687', 'P5247', 'P6332', 'P5555', 'P6385', 'P6573', 'P443', 'P31'
+	]);
+});
+
+test('allClaims on entity without claims', t => {
+	const reader = new WikidataEntityReader({
+		id: 'Q42',
+		type: 'item'
+	});
+	t.deepEqual(reader.allClaims(), []);
+});
+
 test('claim', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.claim('P18'), [

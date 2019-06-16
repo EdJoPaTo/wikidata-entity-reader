@@ -32,6 +32,10 @@ export default class WikidataEntityReader {
 		return `https://www.wikidata.org/wiki/${this.entity.id}`;
 	}
 
+	allClaims(): readonly string[] {
+		return Object.keys(this.entity.claims || {});
+	}
+
 	claim(claim: string): readonly any[] {
 		const {claims} = this.entity;
 		if (!claims || !claims[claim]) {
