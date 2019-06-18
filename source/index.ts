@@ -1,4 +1,4 @@
-import {getImageUrl, EntitySimplified} from 'wikidata-sdk';
+import {getImageUrl, getSitelinkUrl, getSitelinkData, EntitySimplified} from 'wikidata-sdk';
 
 export default class WikidataEntityReader {
 	constructor(
@@ -39,6 +39,24 @@ export default class WikidataEntityReader {
 
 	url(): string {
 		return `https://www.wikidata.org/wiki/${this.entity.id}`;
+	}
+
+	allSitelinks(): readonly string[] {
+		return Object.keys(this.entity.sitelinks || {});
+	}
+
+	allSitelinksInLang(lang = this.defaultLanguageCode): readonly string[] {
+		return this.allSitelinks()
+			.filter(o => getSitelinkData(o).lang === lang);
+	}
+
+	sitelinkUrl(sitekey: string): string | undefined {
+		const {sitelinks} = this.entity;
+		if (!sitelinks || !sitelinks[sitekey]) {
+			return undefined;
+		}
+
+		return getSitelinkUrl(sitekey, sitelinks[sitekey]);
 	}
 
 	allClaims(): readonly string[] {

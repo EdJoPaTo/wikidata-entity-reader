@@ -98,6 +98,48 @@ test('url', t => {
 	t.is(reader.url(), 'https://www.wikidata.org/wiki/Q5');
 });
 
+test('allSitelinks', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.allSitelinks(), [
+		'acewiki', 'afwiki', 'alswiki', 'amwiki', 'anwiki', 'arcwiki', 'arwiki', 'arwikiquote', 'arzwiki', 'astwiki', 'aswiki', 'avwiki', 'aywiki', 'azbwiki', 'azwiki', 'azwikiquote', 'barwiki', 'bat_smgwiki', 'bawiki', 'bclwiki', 'be_x_oldwiki', 'bewiki', 'bgwiki', 'bhwiki', 'bnwiki', 'bowiki', 'brwiki', 'bswiki', 'bswikiquote', 'bxrwiki', 'cawiki', 'cdowiki', 'cebwiki', 'cewiki', 'ckbwiki', 'cswiki', 'cswikiquote', 'cvwiki', 'cywiki', 'dawiki', 'dewiki', 'dewikiquote', 'diqwiki', 'dtywiki', 'elwiki', 'elwikiquote', 'enwiki', 'eowiki', 'eowikiquote', 'eswiki', 'eswikiquote', 'etwiki', 'etwikiquote', 'euwiki', 'fawiki', 'fawikiquote', 'fiu_vrowiki', 'fiwiki', 'fiwikiquote', 'fowiki', 'frrwiki', 'furwiki', 'fywiki', 'ganwiki', 'gawiki', 'glkwiki', 'glwiki', 'glwikiquote', 'gnwiki', 'guwiki', 'hakwiki', 'hawiki', 'hewiki', 'hewikiquote', 'hifwiki', 'hiwiki', 'hrwiki', 'hrwikiquote', 'htwiki', 'huwiki', 'huwikiquote', 'hywiki', 'hywikiquote', 'iawiki', 'idwiki', 'igwiki', 'ilowiki', 'inhwiki', 'iowiki', 'iswiki', 'itwikiquote', 'iuwiki', 'jamwiki', 'jawiki', 'jbowiki', 'jvwiki', 'kawiki', 'kgwiki', 'kkwiki', 'kmwiki', 'knwiki', 'koiwiki', 'kowiki', 'kowikiquote', 'kshwiki', 'kswiki', 'kuwiki', 'kvwiki', 'kwwiki', 'kywiki', 'lawiki', 'lawikiquote', 'lbewiki', 'lezwiki', 'lfnwiki', 'lgwiki', 'lijwiki', 'liwiki', 'lnwiki', 'lowiki', 'ltgwiki', 'ltwiki', 'ltwikiquote', 'lvwiki', 'maiwiki', 'map_bmswiki', 'mdfwiki', 'mgwiki', 'mhrwiki', 'minwiki', 'mkwiki', 'mlwiki', 'mnwiki', 'mrwiki', 'mswiki', 'mtwiki', 'mwlwiki', 'mywiki', 'nahwiki', 'nds_nlwiki', 'newiki', 'newwiki', 'nlwiki', 'nlwikiquote', 'nnwiki', 'nnwikiquote', 'nowiki', 'ocwiki', 'orwiki', 'oswiki', 'pamwiki', 'pawiki', 'piwiki', 'plwiki', 'plwikiquote', 'pmswiki', 'pnbwiki', 'pswiki', 'ptwiki', 'quwiki', 'rmywiki', 'roa_rupwiki', 'rowiki', 'ruwiki', 'ruwikinews', 'ruwikiquote', 'sahwiki', 'satwiki', 'sawiki', 'scnwiki', 'scowiki', 'sdwiki', 'sewiki', 'shwiki', 'simplewiki', 'siwiki', 'skwiki', 'skwikiquote', 'slwiki', 'slwikiquote', 'sowiki', 'sqwiki', 'srwiki', 'srwikiquote', 'suwiki', 'svwiki', 'swwiki', 'szlwiki', 'tawiki', 'tewiki', 'tgwiki', 'thwiki', 'tlwiki', 'trwiki', 'trwikiquote', 'tswiki', 'ttwiki', 'ugwiki', 'ukwiki', 'ukwikiquote', 'urwiki', 'uzwiki', 'vepwiki', 'viwiki', 'viwikiquote', 'vlswiki', 'warwiki', 'wawiki', 'wuuwiki', 'xhwiki', 'xmfwiki', 'yiwiki', 'yowiki', 'zawiki', 'zh_classicalwiki', 'zh_min_nanwiki', 'zh_yuewiki', 'zhwiki', 'zhwikiquote', 'zuwiki'
+	]);
+});
+
+test('allSitelinks on entity without sitelinks', t => {
+	const reader = new WikidataEntityReader(minimalEntity);
+	t.deepEqual(reader.allSitelinks(), []);
+});
+
+test('allSitelinksinLang with default lang en', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.allSitelinksInLang(), ['enwiki']);
+});
+
+test('allSitelinksinLang with lang by argument', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.allSitelinksInLang('ru'), ['ruwiki', 'ruwikinews', 'ruwikiquote']);
+});
+
+test('allSitelinksinLang with lang by constructor', t => {
+	const reader = new WikidataEntityReader(entityHuman, 'ru');
+	t.deepEqual(reader.allSitelinksInLang(), ['ruwiki', 'ruwikinews', 'ruwikiquote']);
+});
+
+test('sitelinkUrl', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.is(reader.sitelinkUrl('dewiki'), 'https://de.wikipedia.org/wiki/Mensch');
+});
+
+test('sitelinkUrl not existing', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.is(reader.sitelinkUrl('undefined sitekey'), undefined);
+});
+
+test('sitelinkUrl from item without sitelinks', t => {
+	const reader = new WikidataEntityReader(minimalEntity);
+	t.is(reader.sitelinkUrl('dewiki'), undefined);
+});
+
 test('allClaims', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.allClaims(), [
