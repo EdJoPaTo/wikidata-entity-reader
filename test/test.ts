@@ -106,10 +106,7 @@ test('allClaims', t => {
 });
 
 test('allClaims on entity without claims', t => {
-	const reader = new WikidataEntityReader({
-		id: 'Q42',
-		type: 'item'
-	});
+	const reader = new WikidataEntityReader(minimalEntity);
 	t.deepEqual(reader.allClaims(), []);
 });
 
