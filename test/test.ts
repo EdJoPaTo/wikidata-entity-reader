@@ -68,6 +68,31 @@ test('description from item without descriptions', t => {
 	t.is(reader.description(), undefined);
 });
 
+test('aliases with default lang en', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.aliases(), ['human being', 'humankind', 'people', 'homosapiens', 'person']);
+});
+
+test('aliases with lang by argument', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.aliases('de'), ['Homo sapiens', 'Person', 'Homo sapiens sapiens']);
+});
+
+test('aliases with lang by constructor', t => {
+	const reader = new WikidataEntityReader(entityHuman, 'de');
+	t.deepEqual(reader.aliases(), ['Homo sapiens', 'Person', 'Homo sapiens sapiens']);
+});
+
+test('aliases not existing', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.deepEqual(reader.aliases('undefined language'), []);
+});
+
+test('aliases from item without aliases', t => {
+	const reader = new WikidataEntityReader(minimalEntity);
+	t.deepEqual(reader.aliases(), []);
+});
+
 test('url', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.is(reader.url(), 'https://www.wikidata.org/wiki/Q5');

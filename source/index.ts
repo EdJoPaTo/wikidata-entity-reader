@@ -28,6 +28,15 @@ export default class WikidataEntityReader {
 		return descriptions[languageCode];
 	}
 
+	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
+		const {aliases} = this.entity;
+		if (!aliases || !aliases[languageCode]) {
+			return [];
+		}
+
+		return aliases[languageCode];
+	}
+
 	url(): string {
 		return `https://www.wikidata.org/wiki/${this.entity.id}`;
 	}
