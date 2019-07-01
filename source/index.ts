@@ -74,7 +74,8 @@ export default class WikidataEntityReader {
 
 	images(width?: number): readonly string[] {
 		const images = this.claim('P18')
-			.map(o => getImageUrl(o, width));
+			.map(o => getImageUrl(o, width))
+			.map(o => encodeURI(o));
 		return images;
 	}
 

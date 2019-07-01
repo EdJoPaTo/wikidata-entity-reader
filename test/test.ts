@@ -174,7 +174,7 @@ test('images', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.images(), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Human.svg',
-		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior view of human female and male, with labels.svg'
+		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg'
 	]);
 });
 
@@ -182,7 +182,7 @@ test('images with width', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.images(42), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Human.svg?width=42',
-		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior view of human female and male, with labels.svg?width=42'
+		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg?width=42'
 	]);
 });
 
