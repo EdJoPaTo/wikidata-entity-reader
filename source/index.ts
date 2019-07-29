@@ -12,11 +12,13 @@ export default class WikidataEntityReader {
 
 	label(languageCode = this.defaultLanguageCode): string {
 		const {labels} = this.entity;
-		if (!labels || !labels[languageCode]) {
+		if (!labels) {
 			return this.entity.id;
 		}
 
-		return labels[languageCode];
+		return labels[languageCode] ||
+			labels[this._baseLanguageCode(languageCode)] ||
+			this.entity.id;
 	}
 
 	description(languageCode = this.defaultLanguageCode): string | undefined {
@@ -25,7 +27,8 @@ export default class WikidataEntityReader {
 			return undefined;
 		}
 
-		return descriptions[languageCode];
+		return descriptions[languageCode] ||
+			descriptions[this._baseLanguageCode(languageCode)];
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
@@ -81,6 +84,10 @@ export default class WikidataEntityReader {
 
 	unicodeChars(): readonly string[] {
 		return this.claim('P487');
+	}
+
+	private _baseLanguageCode(languageCode: string): string {
+		return languageCode.split('-')[0];
 	}
 }
 

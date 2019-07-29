@@ -38,6 +38,11 @@ test('label not existing', t => {
 	t.is(reader.label('undefined language'), 'Q5');
 });
 
+test('label with country lang falls back base lang', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.is(reader.label('de-somewhere'), 'Mensch');
+});
+
 test('label from item without labels', t => {
 	const reader = new WikidataEntityReader(minimalEntity);
 	t.is(reader.label(), 'Q2');
@@ -61,6 +66,11 @@ test('description with lang by constructor', t => {
 test('description not existing', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.is(reader.description('undefined language'), undefined);
+});
+
+test('description with country lang falls back base lang', t => {
+	const reader = new WikidataEntityReader(entityHuman);
+	t.is(reader.description('de-somewhere'), 'höheres Säugetier aus der Ordnung der Primaten, Trivialname von Homo sapiens und Homo sapiens sapiens');
 });
 
 test('description from item without descriptions', t => {
