@@ -47,7 +47,7 @@ const reader = new WikidataEntityReader(entity, 'de');
 
 Type: `EntitySimplified`
 
-simplified entity from [wikidata-sdk](https://github.com/maxlath/wikidata-sdk).
+simplified entity from [wikibase-sdk](https://github.com/maxlath/wikibase-sdk).
 
 #### defaultLanguageCode
 

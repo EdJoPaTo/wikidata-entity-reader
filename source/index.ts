@@ -1,9 +1,12 @@
-import {getImageUrl, getSitelinkUrl, getSitelinkData, EntitySimplified} from 'wikidata-sdk';
+import {EntitySimplified} from './wikibase-sdk-types';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 
 export default class WikidataEntityReader {
 	constructor(
-		public entity: EntitySimplified,
-		private defaultLanguageCode: string = 'en'
+		public readonly entity: EntitySimplified,
+		private readonly defaultLanguageCode: string = 'en'
 	) { }
 
 	qNumber(): string {
@@ -45,7 +48,7 @@ export default class WikidataEntityReader {
 	}
 
 	allSitelinks(): readonly string[] {
-		return Object.keys(this.entity.sitelinks || {});
+		return Object.keys(this.entity.sitelinks ?? {});
 	}
 
 	allSitelinksInLang(lang = this.defaultLanguageCode): readonly string[] {
@@ -63,7 +66,7 @@ export default class WikidataEntityReader {
 	}
 
 	allClaims(): readonly string[] {
-		return Object.keys(this.entity.claims || {});
+		return Object.keys(this.entity.claims ?? {});
 	}
 
 	claim(claim: string): readonly any[] {

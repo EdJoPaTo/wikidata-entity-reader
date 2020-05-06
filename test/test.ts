@@ -1,7 +1,8 @@
 import {readFileSync} from 'fs';
 
-import {EntitySimplified} from 'wikidata-sdk';
 import test from 'ava';
+
+import {EntitySimplified} from '../source/wikibase-sdk-types';
 
 import WikidataEntityReader from '../source';
 
