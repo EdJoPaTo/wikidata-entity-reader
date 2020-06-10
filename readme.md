@@ -116,8 +116,3 @@ const imageArray = reader.images();
 const imageArray = reader.images(width);
 const imageArray = reader.images(500);
 ```
-
-
-## License
-
-MIT © [EdJoPaTo](https://github.com/EdJoPaTo)
