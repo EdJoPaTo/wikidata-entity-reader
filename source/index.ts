@@ -35,12 +35,7 @@ export default class WikidataEntityReader {
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
-		const {aliases} = this.entity;
-		if (!aliases || !aliases[languageCode]) {
-			return [];
-		}
-
-		return aliases[languageCode];
+		return this.entity.aliases?.[languageCode] ?? [];
 	}
 
 	url(): string {
@@ -57,12 +52,12 @@ export default class WikidataEntityReader {
 	}
 
 	sitelinkUrl(sitekey: string): string | undefined {
-		const {sitelinks} = this.entity;
-		if (!sitelinks || !sitelinks[sitekey]) {
+		const sitelink = this.entity.sitelinks?.[sitekey];
+		if (!sitelink) {
 			return undefined;
 		}
 
-		return getSitelinkUrl(sitekey, sitelinks[sitekey]);
+		return getSitelinkUrl(sitekey, sitelink);
 	}
 
 	allClaims(): readonly string[] {
@@ -70,12 +65,7 @@ export default class WikidataEntityReader {
 	}
 
 	claim(claim: string): readonly any[] {
-		const {claims} = this.entity;
-		if (!claims || !claims[claim]) {
-			return [];
-		}
-
-		return claims[claim];
+		return this.entity.claims?.[claim] ?? [];
 	}
 
 	images(width?: number): readonly string[] {
@@ -90,7 +80,7 @@ export default class WikidataEntityReader {
 	}
 
 	private _baseLanguageCode(languageCode: string): string {
-		return languageCode.split('-')[0];
+		return languageCode.split('-')[0]!;
 	}
 }
 
