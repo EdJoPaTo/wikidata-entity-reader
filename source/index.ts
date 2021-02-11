@@ -7,7 +7,7 @@ export default class WikidataEntityReader {
 	constructor(
 		public readonly entity: EntitySimplified,
 		private readonly defaultLanguageCode: string = 'en'
-	) { }
+	) {}
 
 	qNumber(): string {
 		return this.entity.id;
@@ -19,8 +19,8 @@ export default class WikidataEntityReader {
 			return this.entity.id;
 		}
 
-		return labels[languageCode] ||
-			labels[this._baseLanguageCode(languageCode)] ||
+		return (labels[languageCode] ??
+			labels[this._baseLanguageCode(languageCode)]) ??
 			this.entity.id;
 	}
 
@@ -30,7 +30,7 @@ export default class WikidataEntityReader {
 			return undefined;
 		}
 
-		return descriptions[languageCode] ||
+		return descriptions[languageCode] ??
 			descriptions[this._baseLanguageCode(languageCode)];
 	}
 
