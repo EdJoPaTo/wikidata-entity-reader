@@ -2,7 +2,6 @@
 
 [![NPM Version](https://img.shields.io/npm/v/wikidata-entity-reader.svg)](https://www.npmjs.com/package/wikidata-entity-reader)
 [![node](https://img.shields.io/node/v/wikidata-entity-reader.svg)](https://www.npmjs.com/package/wikidata-entity-reader)
-[![Build Status](https://travis-ci.com/EdJoPaTo/wikidata-entity-reader.svg?branch=master)](https://travis-ci.com/EdJoPaTo/wikidata-entity-reader)
 [![Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-entity-reader/status.svg)](https://david-dm.org/EdJoPaTo/wikidata-entity-reader)
 [![Dev Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-entity-reader/dev-status.svg)](https://david-dm.org/EdJoPaTo/wikidata-entity-reader?type=dev)
 
