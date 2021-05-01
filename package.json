@@ -2,6 +2,10 @@
 	"name": "wikidata-entity-reader",
 	"version": "2.0.0",
 	"description": "read information of wikidata entities in a simpler way",
+	"keywords": [
+		"wikidata",
+		"entity"
+	],
 	"license": "MIT",
 	"repository": "EdJoPaTo/wikidata-entity-reader",
 	"author": {
@@ -9,24 +13,15 @@
 		"email": "wikibase-npm-package@edjopato.de",
 		"url": "https://edjopato.de"
 	},
-	"engines": {
-		"node": ">=10"
-	},
 	"scripts": {
 		"build": "del-cli dist && tsc",
 		"prepack": "npm run build",
 		"test": "tsc --sourceMap && xo && nyc ava"
 	},
-	"main": "dist/source",
-	"types": "dist/source",
-	"files": [
-		"dist/source",
-		"!*.test.*"
-	],
-	"keywords": [
-		"wikidata",
-		"entity"
-	],
+	"type": "commonjs",
+	"engines": {
+		"node": ">=10"
+	},
 	"dependencies": {
 		"wikibase-sdk": "^7.4.1"
 	},
@@ -39,17 +34,13 @@
 		"typescript": "^4.1.5",
 		"xo": "^0.39.1"
 	},
+	"files": [
+		"dist/source",
+		"!*.test.*"
+	],
+	"main": "dist/source",
+	"types": "dist/source",
 	"nyc": {
-		"extension": [
-			".ts"
-		],
-		"include": [
-			"dist/source",
-			"source"
-		],
-		"exclude": [
-			"**/*.test.ts"
-		],
 		"all": true,
 		"reporter": [
 			"lcov",
@@ -64,7 +55,8 @@
 		"overrides": [
 			{
 				"files": [
-					"test/**/*"
+					"**/*.test.*",
+					"test/**/*.*"
 				],
 				"rules": {
 					"@typescript-eslint/no-unsafe-argument": "off",
