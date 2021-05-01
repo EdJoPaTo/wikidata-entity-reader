@@ -69,8 +69,9 @@ export default class WikidataEntityReader {
 	}
 
 	images(width?: number): readonly string[] {
-		const images = this.claim('P18')
+		const images = (this.claim('P18') as readonly string[])
 			.map(o => getImageUrl(o, width))
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			.map(o => encodeURI(o));
 		return images;
 	}
@@ -80,6 +81,7 @@ export default class WikidataEntityReader {
 	}
 
 	private _baseLanguageCode(languageCode: string): string {
+		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		return languageCode.split('-')[0]!;
 	}
 }
