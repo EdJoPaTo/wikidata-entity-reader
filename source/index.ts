@@ -1,6 +1,5 @@
 import {EntitySimplified} from './wikibase-sdk-types';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 
 export default class WikidataEntityReader {
