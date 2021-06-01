@@ -7,6 +7,7 @@ updates:
     directory: "/"
     open-pull-requests-limit: 30
     schedule:
-      interval: "monthly"
+      interval: "weekly"
+      time: "03:37" # UTC
     commit-message:
       prefix: "chore(npm):"
