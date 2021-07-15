@@ -11,7 +11,7 @@ const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8'));
 
 const minimalEntity: EntitySimplified = {
 	type: 'item',
-	id: 'Q2'
+	id: 'Q2',
 };
 
 test('qNumber', t => {
@@ -112,7 +112,7 @@ test('url', t => {
 test('allSitelinks', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.allSitelinks(), [
-		'acewiki', 'afwiki', 'alswiki', 'amwiki', 'anwiki', 'arcwiki', 'arwiki', 'arwikiquote', 'arzwiki', 'astwiki', 'aswiki', 'avwiki', 'aywiki', 'azbwiki', 'azwiki', 'azwikiquote', 'barwiki', 'bat_smgwiki', 'bawiki', 'bclwiki', 'be_x_oldwiki', 'bewiki', 'bgwiki', 'bhwiki', 'bnwiki', 'bowiki', 'brwiki', 'bswiki', 'bswikiquote', 'bxrwiki', 'cawiki', 'cdowiki', 'cebwiki', 'cewiki', 'ckbwiki', 'cswiki', 'cswikiquote', 'cvwiki', 'cywiki', 'dawiki', 'dewiki', 'dewikiquote', 'diqwiki', 'dtywiki', 'elwiki', 'elwikiquote', 'enwiki', 'eowiki', 'eowikiquote', 'eswiki', 'eswikiquote', 'etwiki', 'etwikiquote', 'euwiki', 'fawiki', 'fawikiquote', 'fiu_vrowiki', 'fiwiki', 'fiwikiquote', 'fowiki', 'frrwiki', 'furwiki', 'fywiki', 'ganwiki', 'gawiki', 'glkwiki', 'glwiki', 'glwikiquote', 'gnwiki', 'guwiki', 'hakwiki', 'hawiki', 'hewiki', 'hewikiquote', 'hifwiki', 'hiwiki', 'hrwiki', 'hrwikiquote', 'htwiki', 'huwiki', 'huwikiquote', 'hywiki', 'hywikiquote', 'iawiki', 'idwiki', 'igwiki', 'ilowiki', 'inhwiki', 'iowiki', 'iswiki', 'itwikiquote', 'iuwiki', 'jamwiki', 'jawiki', 'jbowiki', 'jvwiki', 'kawiki', 'kgwiki', 'kkwiki', 'kmwiki', 'knwiki', 'koiwiki', 'kowiki', 'kowikiquote', 'kshwiki', 'kswiki', 'kuwiki', 'kvwiki', 'kwwiki', 'kywiki', 'lawiki', 'lawikiquote', 'lbewiki', 'lezwiki', 'lfnwiki', 'lgwiki', 'lijwiki', 'liwiki', 'lnwiki', 'lowiki', 'ltgwiki', 'ltwiki', 'ltwikiquote', 'lvwiki', 'maiwiki', 'map_bmswiki', 'mdfwiki', 'mgwiki', 'mhrwiki', 'minwiki', 'mkwiki', 'mlwiki', 'mnwiki', 'mrwiki', 'mswiki', 'mtwiki', 'mwlwiki', 'mywiki', 'nahwiki', 'nds_nlwiki', 'newiki', 'newwiki', 'nlwiki', 'nlwikiquote', 'nnwiki', 'nnwikiquote', 'nowiki', 'ocwiki', 'orwiki', 'oswiki', 'pamwiki', 'pawiki', 'piwiki', 'plwiki', 'plwikiquote', 'pmswiki', 'pnbwiki', 'pswiki', 'ptwiki', 'quwiki', 'rmywiki', 'roa_rupwiki', 'rowiki', 'ruwiki', 'ruwikinews', 'ruwikiquote', 'sahwiki', 'satwiki', 'sawiki', 'scnwiki', 'scowiki', 'sdwiki', 'sewiki', 'shwiki', 'simplewiki', 'siwiki', 'skwiki', 'skwikiquote', 'slwiki', 'slwikiquote', 'sowiki', 'sqwiki', 'srwiki', 'srwikiquote', 'suwiki', 'svwiki', 'swwiki', 'szlwiki', 'tawiki', 'tewiki', 'tgwiki', 'thwiki', 'tlwiki', 'trwiki', 'trwikiquote', 'tswiki', 'ttwiki', 'ugwiki', 'ukwiki', 'ukwikiquote', 'urwiki', 'uzwiki', 'vepwiki', 'viwiki', 'viwikiquote', 'vlswiki', 'warwiki', 'wawiki', 'wuuwiki', 'xhwiki', 'xmfwiki', 'yiwiki', 'yowiki', 'zawiki', 'zh_classicalwiki', 'zh_min_nanwiki', 'zh_yuewiki', 'zhwiki', 'zhwikiquote', 'zuwiki'
+		'acewiki', 'afwiki', 'alswiki', 'amwiki', 'anwiki', 'arcwiki', 'arwiki', 'arwikiquote', 'arzwiki', 'astwiki', 'aswiki', 'avwiki', 'aywiki', 'azbwiki', 'azwiki', 'azwikiquote', 'barwiki', 'bat_smgwiki', 'bawiki', 'bclwiki', 'be_x_oldwiki', 'bewiki', 'bgwiki', 'bhwiki', 'bnwiki', 'bowiki', 'brwiki', 'bswiki', 'bswikiquote', 'bxrwiki', 'cawiki', 'cdowiki', 'cebwiki', 'cewiki', 'ckbwiki', 'cswiki', 'cswikiquote', 'cvwiki', 'cywiki', 'dawiki', 'dewiki', 'dewikiquote', 'diqwiki', 'dtywiki', 'elwiki', 'elwikiquote', 'enwiki', 'eowiki', 'eowikiquote', 'eswiki', 'eswikiquote', 'etwiki', 'etwikiquote', 'euwiki', 'fawiki', 'fawikiquote', 'fiu_vrowiki', 'fiwiki', 'fiwikiquote', 'fowiki', 'frrwiki', 'furwiki', 'fywiki', 'ganwiki', 'gawiki', 'glkwiki', 'glwiki', 'glwikiquote', 'gnwiki', 'guwiki', 'hakwiki', 'hawiki', 'hewiki', 'hewikiquote', 'hifwiki', 'hiwiki', 'hrwiki', 'hrwikiquote', 'htwiki', 'huwiki', 'huwikiquote', 'hywiki', 'hywikiquote', 'iawiki', 'idwiki', 'igwiki', 'ilowiki', 'inhwiki', 'iowiki', 'iswiki', 'itwikiquote', 'iuwiki', 'jamwiki', 'jawiki', 'jbowiki', 'jvwiki', 'kawiki', 'kgwiki', 'kkwiki', 'kmwiki', 'knwiki', 'koiwiki', 'kowiki', 'kowikiquote', 'kshwiki', 'kswiki', 'kuwiki', 'kvwiki', 'kwwiki', 'kywiki', 'lawiki', 'lawikiquote', 'lbewiki', 'lezwiki', 'lfnwiki', 'lgwiki', 'lijwiki', 'liwiki', 'lnwiki', 'lowiki', 'ltgwiki', 'ltwiki', 'ltwikiquote', 'lvwiki', 'maiwiki', 'map_bmswiki', 'mdfwiki', 'mgwiki', 'mhrwiki', 'minwiki', 'mkwiki', 'mlwiki', 'mnwiki', 'mrwiki', 'mswiki', 'mtwiki', 'mwlwiki', 'mywiki', 'nahwiki', 'nds_nlwiki', 'newiki', 'newwiki', 'nlwiki', 'nlwikiquote', 'nnwiki', 'nnwikiquote', 'nowiki', 'ocwiki', 'orwiki', 'oswiki', 'pamwiki', 'pawiki', 'piwiki', 'plwiki', 'plwikiquote', 'pmswiki', 'pnbwiki', 'pswiki', 'ptwiki', 'quwiki', 'rmywiki', 'roa_rupwiki', 'rowiki', 'ruwiki', 'ruwikinews', 'ruwikiquote', 'sahwiki', 'satwiki', 'sawiki', 'scnwiki', 'scowiki', 'sdwiki', 'sewiki', 'shwiki', 'simplewiki', 'siwiki', 'skwiki', 'skwikiquote', 'slwiki', 'slwikiquote', 'sowiki', 'sqwiki', 'srwiki', 'srwikiquote', 'suwiki', 'svwiki', 'swwiki', 'szlwiki', 'tawiki', 'tewiki', 'tgwiki', 'thwiki', 'tlwiki', 'trwiki', 'trwikiquote', 'tswiki', 'ttwiki', 'ugwiki', 'ukwiki', 'ukwikiquote', 'urwiki', 'uzwiki', 'vepwiki', 'viwiki', 'viwikiquote', 'vlswiki', 'warwiki', 'wawiki', 'wuuwiki', 'xhwiki', 'xmfwiki', 'yiwiki', 'yowiki', 'zawiki', 'zh_classicalwiki', 'zh_min_nanwiki', 'zh_yuewiki', 'zhwiki', 'zhwikiquote', 'zuwiki',
 	]);
 });
 
@@ -154,7 +154,7 @@ test('sitelinkUrl from item without sitelinks', t => {
 test('allClaims', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.allClaims(), [
-		'P527', 'P1552', 'P361', 'P1424', 'P1245', 'P910', 'P646', 'P1343', 'P1709', 'P1963', 'P227', 'P1417', 'P2959', 'P3222', 'P3417', 'P949', 'P1542', 'P3827', 'P373', 'P2579', 'P1056', 'P1051', 'P2283', 'P460', 'P1225', 'P2888', 'P2581', 'P4733', 'P4613', 'P5008', 'P2521', 'P3321', 'P5198', 'P1889', 'P5869', 'P2670', 'P279', 'P18', 'P3241', 'P1687', 'P5247', 'P6332', 'P5555', 'P6385', 'P6573', 'P443', 'P31'
+		'P527', 'P1552', 'P361', 'P1424', 'P1245', 'P910', 'P646', 'P1343', 'P1709', 'P1963', 'P227', 'P1417', 'P2959', 'P3222', 'P3417', 'P949', 'P1542', 'P3827', 'P373', 'P2579', 'P1056', 'P1051', 'P2283', 'P460', 'P1225', 'P2888', 'P2581', 'P4733', 'P4613', 'P5008', 'P2521', 'P3321', 'P5198', 'P1889', 'P5869', 'P2670', 'P279', 'P18', 'P3241', 'P1687', 'P5247', 'P6332', 'P5555', 'P6385', 'P6573', 'P443', 'P31',
 	]);
 });
 
@@ -167,7 +167,7 @@ test('claim', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.claim('P18'), [
 		'Human.svg',
-		'Anterior view of human female and male, with labels.svg'
+		'Anterior view of human female and male, with labels.svg',
 	]);
 });
 
@@ -185,7 +185,7 @@ test('images', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.images(), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Human.svg',
-		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg'
+		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg',
 	]);
 });
 
@@ -193,7 +193,7 @@ test('images with width', t => {
 	const reader = new WikidataEntityReader(entityHuman);
 	t.deepEqual(reader.images(42), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Human.svg?width=42',
-		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg?width=42'
+		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg?width=42',
 	]);
 });
 

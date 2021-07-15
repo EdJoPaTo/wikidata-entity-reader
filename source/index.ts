@@ -5,7 +5,7 @@ const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 export default class WikidataEntityReader {
 	constructor(
 		public readonly entity: EntitySimplified,
-		private readonly defaultLanguageCode: string = 'en'
+		private readonly defaultLanguageCode: string = 'en',
 	) {}
 
 	qNumber(): string {
@@ -18,9 +18,9 @@ export default class WikidataEntityReader {
 			return this.entity.id;
 		}
 
-		return (labels[languageCode] ??
-			labels[this._baseLanguageCode(languageCode)]) ??
-			this.entity.id;
+		return (labels[languageCode]
+			?? labels[this._baseLanguageCode(languageCode)])
+			?? this.entity.id;
 	}
 
 	description(languageCode = this.defaultLanguageCode): string | undefined {
@@ -29,8 +29,8 @@ export default class WikidataEntityReader {
 			return undefined;
 		}
 
-		return descriptions[languageCode] ??
-			descriptions[this._baseLanguageCode(languageCode)];
+		return descriptions[languageCode]
+			?? descriptions[this._baseLanguageCode(languageCode)];
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
@@ -70,7 +70,6 @@ export default class WikidataEntityReader {
 	images(width?: number): readonly string[] {
 		const images = (this.claim('P18') as readonly string[])
 			.map(o => getImageUrl(o, width))
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 			.map(o => encodeURI(o));
 		return images;
 	}
@@ -80,7 +79,6 @@ export default class WikidataEntityReader {
 	}
 
 	private _baseLanguageCode(languageCode: string): string {
-		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		return languageCode.split('-')[0]!;
 	}
 }
