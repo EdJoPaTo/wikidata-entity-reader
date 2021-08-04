@@ -4,10 +4,10 @@ import test from 'ava';
 
 import {EntitySimplified} from '../source/wikibase-sdk-types';
 
-import WikidataEntityReader from '../source';
+import {WikidataEntityReader} from '../source';
 
-const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8'));
-const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8'));
+const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8')) as EntitySimplified;
+const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8')) as EntitySimplified;
 
 const minimalEntity: EntitySimplified = {
 	type: 'item',

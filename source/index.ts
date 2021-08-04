@@ -1,8 +1,9 @@
 import {EntitySimplified} from './wikibase-sdk-types';
 
+// eslint-disable-next-line unicorn/prefer-module, @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-assignment
 const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 
-export default class WikidataEntityReader {
+export class WikidataEntityReader {
 	constructor(
 		public readonly entity: EntitySimplified,
 		private readonly defaultLanguageCode: string = 'en',
@@ -19,7 +20,7 @@ export default class WikidataEntityReader {
 		}
 
 		return (labels[languageCode]
-			?? labels[this._baseLanguageCode(languageCode)])
+			?? labels[this.#baseLanguageCode(languageCode)])
 			?? this.entity.id;
 	}
 
@@ -30,7 +31,7 @@ export default class WikidataEntityReader {
 		}
 
 		return descriptions[languageCode]
-			?? descriptions[this._baseLanguageCode(languageCode)];
+			?? descriptions[this.#baseLanguageCode(languageCode)];
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
@@ -56,33 +57,29 @@ export default class WikidataEntityReader {
 			return undefined;
 		}
 
-		return getSitelinkUrl(sitekey, sitelink);
+		return getSitelinkUrl(sitekey, sitelink) as string;
 	}
 
 	allClaims(): readonly string[] {
 		return Object.keys(this.entity.claims ?? {});
 	}
 
-	claim(claim: string): readonly any[] {
+	claim(claim: string): readonly unknown[] {
 		return this.entity.claims?.[claim] ?? [];
 	}
 
 	images(width?: number): readonly string[] {
 		const images = (this.claim('P18') as readonly string[])
-			.map(o => getImageUrl(o, width))
+			.map(o => getImageUrl(o, width) as string)
 			.map(o => encodeURI(o));
 		return images;
 	}
 
 	unicodeChars(): readonly string[] {
-		return this.claim('P487');
+		return this.claim('P487') as readonly string[];
 	}
 
-	private _baseLanguageCode(languageCode: string): string {
+	#baseLanguageCode(languageCode: string) {
 		return languageCode.split('-')[0]!;
 	}
 }
-
-// For CommonJS default export support
-module.exports = WikidataEntityReader;
-module.exports.default = WikidataEntityReader;

@@ -49,15 +49,10 @@
 	},
 	"xo": {
 		"rules": {
-			"@typescript-eslint/no-require-imports": "off",
-			"@typescript-eslint/no-unsafe-assignment": "off",
 			"@typescript-eslint/no-unsafe-call": "off",
 			"@typescript-eslint/no-unsafe-member-access": "off",
-			"@typescript-eslint/no-unsafe-return": "off",
-			"@typescript-eslint/no-var-requires": "off",
 			"@typescript-eslint/prefer-readonly-parameter-types": "error",
 			"ava/no-ignored-test-files": "off",
-			"unicorn/prefer-module": "off",
 			"unicorn/prefer-node-protocol": "off"
 		},
 		"overrides": [
@@ -67,7 +62,6 @@
 					"test/**/*.*"
 				],
 				"rules": {
-					"@typescript-eslint/no-unsafe-argument": "off",
 					"@typescript-eslint/prefer-readonly-parameter-types": "off"
 				}
 			}
