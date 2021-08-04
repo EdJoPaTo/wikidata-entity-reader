@@ -19,10 +19,10 @@ $ npm install wikidata-entity-reader
 
 ## Usage
 
-```js
-const WikidataEntityReader = require('wikidata-entity-reader');
+```ts
+import {WikibaseEntityReader} from 'wikidata-entity-reader';
 
-const reader = new WikidataEntityReader(entity, 'en');
+const reader = new WikibaseEntityReader(entity, 'en');
 
 reader.label();
 //=> 'human'
@@ -34,12 +34,12 @@ reader.label('de');
 
 ## API
 
-### new WikidataEntityReader
+### new WikibaseEntityReader
 
-```js
-const reader = new WikidataEntityReader(entity);
-const reader = new WikidataEntityReader(entity, defaultLanguageCode);
-const reader = new WikidataEntityReader(entity, 'de');
+```ts
+const reader = new WikibaseEntityReader(entity);
+const reader = new WikibaseEntityReader(entity, defaultLanguageCode);
+const reader = new WikibaseEntityReader(entity, 'de');
 ```
 
 #### entity
@@ -60,7 +60,7 @@ Defaults to 'en'.
 
 Returns the id / Q-Number of the entity.
 
-```js
+```ts
 const qNumber = reader.qNumber();
 ```
 
@@ -69,7 +69,7 @@ const qNumber = reader.qNumber();
 
 Returns the label in the given languageCode (or the default one from the constructor).
 
-```js
+```ts
 const label = reader.label();
 const label = reader.label(languageCode);
 const label = reader.label('de');
@@ -80,7 +80,7 @@ const label = reader.label('de');
 
 Returns the description in the given languageCode (or the default one from the constructor).
 
-```js
+```ts
 const label = reader.description();
 const label = reader.description(languageCode);
 const label = reader.description('de');
@@ -91,7 +91,7 @@ const label = reader.description('de');
 
 Returns the url of the entity a user would like to use.
 
-```js
+```ts
 const url = reader.url();
 ```
 
@@ -100,7 +100,7 @@ const url = reader.url();
 
 Returns the array of information for the requested claim.
 
-```js
+```ts
 const information = reader.claim(property);
 const information = reader.claim('P18');
 ```
@@ -110,7 +110,7 @@ const information = reader.claim('P18');
 
 Returns the full image urls of the entity. Optional with the requested width.
 
-```js
+```ts
 const imageArray = reader.images();
 const imageArray = reader.images(width);
 const imageArray = reader.images(500);
