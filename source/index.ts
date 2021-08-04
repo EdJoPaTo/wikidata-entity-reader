@@ -3,7 +3,7 @@ import {EntitySimplified} from './wikibase-sdk-types';
 // eslint-disable-next-line unicorn/prefer-module, @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-assignment
 const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 
-export class WikidataEntityReader {
+export class WikibaseEntityReader {
 	constructor(
 		public readonly entity: EntitySimplified,
 		private readonly defaultLanguageCode: string = 'en',
