@@ -2,20 +2,16 @@
 
 [![NPM Version](https://img.shields.io/npm/v/wikidata-entity-reader.svg)](https://www.npmjs.com/package/wikidata-entity-reader)
 [![node](https://img.shields.io/node/v/wikidata-entity-reader.svg)](https://www.npmjs.com/package/wikidata-entity-reader)
-[![Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-entity-reader/status.svg)](https://david-dm.org/EdJoPaTo/wikidata-entity-reader)
-[![Dev Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-entity-reader/dev-status.svg)](https://david-dm.org/EdJoPaTo/wikidata-entity-reader?type=dev)
 
 > read information of wikidata entities in a simpler way
 
 This library is meant to help with things like labels in a predefined language or faster access to claims
 
-
 ## Install
 
+```bash
+npm install wikidata-entity-reader
 ```
-$ npm install wikidata-entity-reader
-```
-
 
 ## Usage
 
@@ -30,7 +26,6 @@ reader.label();
 reader.label('de');
 //=> 'Mensch'
 ```
-
 
 ## API
 
@@ -55,7 +50,6 @@ Type: `string`
 languageCode which is used as a fallback.
 Defaults to 'en'.
 
-
 ### reader.qNumber
 
 Returns the id / Q-Number of the entity.
@@ -63,7 +57,6 @@ Returns the id / Q-Number of the entity.
 ```ts
 const qNumber = reader.qNumber();
 ```
-
 
 ### reader.label
 
@@ -75,7 +68,6 @@ const label = reader.label(languageCode);
 const label = reader.label('de');
 ```
 
-
 ### reader.description
 
 Returns the description in the given languageCode (or the default one from the constructor).
@@ -86,7 +78,6 @@ const label = reader.description(languageCode);
 const label = reader.description('de');
 ```
 
-
 ### reader.url
 
 Returns the url of the entity a user would like to use.
@@ -94,7 +85,6 @@ Returns the url of the entity a user would like to use.
 ```ts
 const url = reader.url();
 ```
-
 
 ### reader.claim
 
@@ -104,7 +94,6 @@ Returns the array of information for the requested claim.
 const information = reader.claim(property);
 const information = reader.claim('P18');
 ```
-
 
 ### reader.images
 
