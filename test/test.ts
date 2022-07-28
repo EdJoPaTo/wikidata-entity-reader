@@ -2,9 +2,9 @@ import {readFileSync} from 'node:fs';
 
 import test from 'ava';
 
-import {EntitySimplified} from '../source/wikibase-sdk-types';
+import {EntitySimplified} from '../source/wikibase-sdk-types.js';
 
-import {WikibaseEntityReader} from '../source';
+import {WikibaseEntityReader} from '../source/index.js';
 
 const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8')) as EntitySimplified;
 const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8')) as EntitySimplified;
