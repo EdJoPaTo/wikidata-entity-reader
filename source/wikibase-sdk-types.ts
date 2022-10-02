@@ -1,6 +1,6 @@
 export type ClaimSimplified = unknown;
 
-export interface EntitySimplified {
+export type EntitySimplified = {
 	readonly type: string;
 	readonly id: string;
 	readonly modified?: string;
@@ -9,4 +9,4 @@ export interface EntitySimplified {
 	readonly descriptions?: Readonly<Record<string, string>>;
 	readonly labels?: Readonly<Record<string, string>>;
 	readonly sitelinks?: Readonly<Record<string, string>>;
-}
+};

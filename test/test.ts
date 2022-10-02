@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 
 import test from 'ava';
 
-import {EntitySimplified} from '../source/wikibase-sdk-types.js';
+import type {EntitySimplified} from '../source/wikibase-sdk-types.js';
 
 import {WikibaseEntityReader} from '../source/index.js';
 
