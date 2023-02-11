@@ -23,7 +23,7 @@
 		"node": ">=14"
 	},
 	"dependencies": {
-		"wikibase-sdk": "^8.0.0"
+		"wikibase-sdk": "^9.0.3"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^3.0.0",
