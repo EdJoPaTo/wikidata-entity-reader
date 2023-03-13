@@ -1,4 +1,4 @@
-import {getImageUrl, getSitelinkUrl, getSitelinkData, type Site} from 'wikibase-sdk';
+import {getImageUrl, getSitelinkUrl, getSitelinkData, type Site, type PropertyId} from 'wikibase-sdk';
 import type {EntitySimplified} from './wikibase-sdk-types.js';
 
 export class WikibaseEntityReader {
@@ -62,7 +62,7 @@ export class WikibaseEntityReader {
 		return Object.keys(this.entity.claims ?? {});
 	}
 
-	claim(claim: string): readonly unknown[] {
+	claim(claim: PropertyId): readonly unknown[] {
 		return this.entity.claims?.[claim] ?? [];
 	}
 

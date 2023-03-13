@@ -174,11 +174,13 @@ test('claim', t => {
 
 test('claim not existing', t => {
 	const reader = new WikibaseEntityReader(entityHuman);
+	// @ts-expect-error not a PropertyId
 	t.deepEqual(reader.claim('unknown claim'), []);
 });
 
 test('claim from item without claims', t => {
 	const reader = new WikibaseEntityReader(minimalEntity);
+	// @ts-expect-error not a PropertyId
 	t.deepEqual(reader.claim('unknown claim'), []);
 });
 
