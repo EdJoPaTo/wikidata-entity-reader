@@ -1,7 +1,5 @@
+import {getImageUrl, getSitelinkUrl, getSitelinkData, type Site} from 'wikibase-sdk';
 import type {EntitySimplified} from './wikibase-sdk-types.js';
-
-// eslint-disable-next-line unicorn/prefer-module, @typescript-eslint/no-var-requires, @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-assignment
-const {getImageUrl, getSitelinkUrl, getSitelinkData} = require('wikibase-sdk');
 
 export class WikibaseEntityReader {
 	constructor(
@@ -51,13 +49,13 @@ export class WikibaseEntityReader {
 			.filter(o => getSitelinkData(o).lang === lang);
 	}
 
-	sitelinkUrl(sitekey: string): string | undefined {
-		const sitelink = this.entity.sitelinks?.[sitekey];
-		if (!sitelink) {
+	sitelinkUrl(site: Site): string | undefined {
+		const title = this.entity.sitelinks?.[site];
+		if (!title) {
 			return undefined;
 		}
 
-		return getSitelinkUrl(sitekey, sitelink) as string;
+		return getSitelinkUrl({site, title});
 	}
 
 	allClaims(): readonly string[] {
@@ -70,7 +68,7 @@ export class WikibaseEntityReader {
 
 	images(width?: number): readonly string[] {
 		const images = (this.claim('P18') as readonly string[])
-			.map(o => getImageUrl(o, width) as string)
+			.map(o => getImageUrl(o, width))
 			.map(o => encodeURI(o));
 		return images;
 	}

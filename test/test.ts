@@ -143,7 +143,8 @@ test('sitelinkUrl', t => {
 
 test('sitelinkUrl not existing', t => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.sitelinkUrl('undefined sitekey'), undefined);
+	// @ts-expect-error undefined site
+	t.is(reader.sitelinkUrl('undefined site'), undefined);
 });
 
 test('sitelinkUrl from item without sitelinks', t => {
