@@ -1,56 +1,70 @@
-import {getImageUrl, getSitelinkUrl, getSitelinkData, type Site, type PropertyId} from 'wikibase-sdk';
-import type {EntitySimplified} from './wikibase-sdk-types.js';
+import {type Claim, type Claims, type ClaimSnakString, type Entity, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type Term} from 'wikibase-sdk';
 
 export class WikibaseEntityReader {
 	constructor(
-		public readonly entity: EntitySimplified,
+		public readonly entity: Readonly<Entity>,
 		private readonly defaultLanguageCode: string = 'en',
 	) {}
 
-	qNumber(): string {
+	qNumber(): Entity['id'] {
 		return this.entity.id;
 	}
 
 	label(languageCode = this.defaultLanguageCode): string {
-		const {labels} = this.entity;
+		const labels = 'labels' in this.entity
+			&& this.entity.labels as Record<string, Term>;
 		if (!labels) {
 			return this.entity.id;
 		}
 
-		return (labels[languageCode]
-			?? labels[this.#baseLanguageCode(languageCode)])
+		return labels[languageCode]?.value
+			?? labels[this.#baseLanguageCode(languageCode)]?.value
 			?? this.entity.id;
 	}
 
 	description(languageCode = this.defaultLanguageCode): string | undefined {
-		const {descriptions} = this.entity;
+		const descriptions = 'descriptions' in this.entity
+			&& this.entity.descriptions as Record<string, Term>;
 		if (!descriptions) {
 			return undefined;
 		}
 
-		return descriptions[languageCode]
-			?? descriptions[this.#baseLanguageCode(languageCode)];
+		return descriptions[languageCode]?.value
+			?? descriptions[this.#baseLanguageCode(languageCode)]?.value;
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
-		return this.entity.aliases?.[languageCode] ?? [];
+		if (!('aliases' in this.entity)) {
+			return [];
+		}
+
+		const aliases = this.entity.aliases as Record<string, Term[]>;
+		return aliases?.[languageCode]?.map(o => o.value) ?? [];
 	}
 
 	url(): string {
 		return `https://www.wikidata.org/wiki/${this.entity.id}`;
 	}
 
-	allSitelinks(): readonly string[] {
-		return Object.keys(this.entity.sitelinks ?? {});
+	allSitelinks(): Site[] {
+		if (!('sitelinks' in this.entity)) {
+			return [];
+		}
+
+		return Object.keys(this.entity.sitelinks ?? {}) as Array<keyof Sitelinks>;
 	}
 
-	allSitelinksInLang(lang = this.defaultLanguageCode): readonly string[] {
+	allSitelinksInLang(lang = this.defaultLanguageCode): Site[] {
 		return this.allSitelinks()
 			.filter(o => getSitelinkData(o).lang === lang);
 	}
 
 	sitelinkUrl(site: Site): string | undefined {
-		const title = this.entity.sitelinks?.[site];
+		if (!('sitelinks' in this.entity)) {
+			return undefined;
+		}
+
+		const title = this.entity.sitelinks?.[site]?.title;
 		if (!title) {
 			return undefined;
 		}
@@ -58,23 +72,36 @@ export class WikibaseEntityReader {
 		return getSitelinkUrl({site, title});
 	}
 
-	allClaims(): readonly string[] {
-		return Object.keys(this.entity.claims ?? {});
+	allClaims(): PropertyId[] {
+		if (!('claims' in this.entity)) {
+			return [];
+		}
+
+		return Object.keys(this.entity.claims ?? {}) as Array<keyof Claims>;
 	}
 
-	claim(claim: PropertyId): readonly unknown[] {
+	claim(claim: PropertyId): readonly Claim[] {
+		if (!('claims' in this.entity)) {
+			return [];
+		}
+
 		return this.entity.claims?.[claim] ?? [];
 	}
 
 	images(width?: number): readonly string[] {
-		const images = (this.claim('P18') as readonly string[])
-			.map(o => getImageUrl(o, width))
+		const images = this.claim('P18')
+			.map(o => o.mainsnak.datavalue)
+			.filter((o): o is Readonly<ClaimSnakString> => o?.type === 'string')
+			.map(o => getImageUrl(o.value, width))
 			.map(o => encodeURI(o));
 		return images;
 	}
 
 	unicodeChars(): readonly string[] {
-		return this.claim('P487') as readonly string[];
+		return this.claim('P487')
+			.map(o => o.mainsnak.datavalue)
+			.filter((o): o is Readonly<ClaimSnakString> => o?.type === 'string')
+			.map(o => o.value);
 	}
 
 	#baseLanguageCode(languageCode: string) {
