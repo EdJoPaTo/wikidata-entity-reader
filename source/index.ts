@@ -38,12 +38,15 @@ export class WikibaseEntityReader {
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
-		if (!('aliases' in this.entity)) {
+		const aliases = 'aliases' in this.entity
+			&& this.entity.aliases as Record<string, Term[]>;
+		if (!aliases) {
 			return [];
 		}
 
-		const aliases = this.entity.aliases as Record<string, Term[]>;
-		return aliases?.[languageCode]?.map(o => o.value) ?? [];
+		return aliases[languageCode]?.map(o => o.value)
+			?? aliases[this.#baseLanguageCode(languageCode)]?.map(o => o.value)
+			?? [];
 	}
 
 	/** Returns the url of the entity a user would like to use */
