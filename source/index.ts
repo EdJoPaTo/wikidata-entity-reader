@@ -1,15 +1,18 @@
-import {type Claim, type Claims, type ClaimSnakString, type Entity, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type SnakValue, type Term, truthyPropertyClaims} from 'wikibase-sdk';
+import {type Claim, type Claims, type ClaimSnakString, type Entity, type EntityId, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type SnakValue, type Term, truthyPropertyClaims} from 'wikibase-sdk';
 
 export class WikibaseEntityReader {
 	constructor(
 		public readonly entity: Readonly<Entity>,
+		/** LanguageCode which is used as a fallback. Defaults to 'en'. */
 		private readonly defaultLanguageCode: string = 'en',
 	) {}
 
-	qNumber(): Entity['id'] {
+	/** Returns the id / Q-Number of the entity */
+	qNumber(): EntityId {
 		return this.entity.id;
 	}
 
+	/** Returns the label in the given languageCode (or the default one from the constructor) */
 	label(languageCode = this.defaultLanguageCode): string {
 		const labels = 'labels' in this.entity
 			&& this.entity.labels as Record<string, Term>;
@@ -22,6 +25,7 @@ export class WikibaseEntityReader {
 			?? this.entity.id;
 	}
 
+	/** Returns the description in the given languageCode (or the default one from the constructor) */
 	description(languageCode = this.defaultLanguageCode): string | undefined {
 		const descriptions = 'descriptions' in this.entity
 			&& this.entity.descriptions as Record<string, Term>;
@@ -42,6 +46,7 @@ export class WikibaseEntityReader {
 		return aliases?.[languageCode]?.map(o => o.value) ?? [];
 	}
 
+	/** Returns the url of the entity a user would like to use */
 	url(): string {
 		return `https://www.wikidata.org/wiki/${this.entity.id}`;
 	}
@@ -72,6 +77,7 @@ export class WikibaseEntityReader {
 		return getSitelinkUrl({site, title});
 	}
 
+	/** Returns all PropertyIds of claims the entity has */
 	allClaims(): PropertyId[] {
 		if (!('claims' in this.entity)) {
 			return [];
@@ -80,6 +86,7 @@ export class WikibaseEntityReader {
 		return Object.keys(this.entity.claims ?? {}) as Array<keyof Claims>;
 	}
 
+	/** Returns the array of information for the requested claim */
 	claim(claim: PropertyId): readonly Claim[] {
 		if (!('claims' in this.entity)) {
 			return [];
@@ -97,6 +104,7 @@ export class WikibaseEntityReader {
 			.filter((o): o is SnakValue => typeof o?.type === 'string');
 	}
 
+	/** Returns the full image urls of the entity. Optional with the requested width. */
 	images(width?: number): readonly string[] {
 		const images = this.claim('P18')
 			.map(o => o.mainsnak.datavalue)
