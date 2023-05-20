@@ -1,4 +1,19 @@
-import {type Claim, type Claims, type ClaimSnakString, type Entity, type EntityId, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type SnakValue, type Term, truthyPropertyClaims} from 'wikibase-sdk';
+import {
+	type Claim,
+	type Claims,
+	type ClaimSnakString,
+	type Entity,
+	type EntityId,
+	getImageUrl,
+	getSitelinkData,
+	getSitelinkUrl,
+	type PropertyId,
+	type Site,
+	type Sitelinks,
+	type SnakValue,
+	type Term,
+	truthyPropertyClaims,
+} from 'wikibase-sdk';
 
 export class WikibaseEntityReader {
 	constructor(
