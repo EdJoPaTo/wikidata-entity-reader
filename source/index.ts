@@ -1,4 +1,4 @@
-import {type Claim, type Claims, type ClaimSnakString, type Entity, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type Term} from 'wikibase-sdk';
+import {type Claim, type Claims, type ClaimSnakString, type Entity, getImageUrl, getSitelinkData, getSitelinkUrl, type PropertyId, type Site, type Sitelinks, type SnakValue, type Term, truthyPropertyClaims} from 'wikibase-sdk';
 
 export class WikibaseEntityReader {
 	constructor(
@@ -86,6 +86,15 @@ export class WikibaseEntityReader {
 		}
 
 		return this.entity.claims?.[claim] ?? [];
+	}
+
+	/** Return truthy claim values (first preferred, otherwise normal) */
+	claimValues(claim: PropertyId): readonly SnakValue[] {
+		const claims = this.claim(claim);
+		const truthy = truthyPropertyClaims([...claims]);
+		return truthy
+			.map(o => o.mainsnak.datavalue)
+			.filter((o): o is SnakValue => typeof o?.type === 'string');
 	}
 
 	images(width?: number): readonly string[] {
