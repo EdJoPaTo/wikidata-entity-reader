@@ -124,18 +124,16 @@ export class WikibaseEntityReader {
 
 	/** Returns the full image urls of the entity. Optional with the requested width. */
 	images(width?: number): readonly string[] {
-		const images = this.claim('P18')
-			.map(o => o.mainsnak.datavalue)
-			.filter((o): o is Readonly<ClaimSnakString> => o?.type === 'string')
+		const images = this.claimValues('P18')
+			.filter((o): o is Readonly<ClaimSnakString> => o.type === 'string')
 			.map(o => getImageUrl(o.value, width))
 			.map(o => encodeURI(o));
 		return images;
 	}
 
 	unicodeChars(): readonly string[] {
-		return this.claim('P487')
-			.map(o => o.mainsnak.datavalue)
-			.filter((o): o is Readonly<ClaimSnakString> => o?.type === 'string')
+		return this.claimValues('P487')
+			.filter((o): o is Readonly<ClaimSnakString> => o.type === 'string')
 			.map(o => o.value);
 	}
 
