@@ -1,7 +1,6 @@
 import {
 	type Claim,
 	type Claims,
-	type ClaimSnakString,
 	type Entity,
 	type EntityId,
 	getImageUrl,
@@ -11,6 +10,7 @@ import {
 	type Site,
 	type Sitelinks,
 	type SnakValue,
+	type StringSnakValue,
 	type Term,
 	truthyPropertyClaims,
 } from 'wikibase-sdk';
@@ -125,7 +125,7 @@ export class WikibaseEntityReader {
 	/** Returns the full image urls of the entity. Optional with the requested width. */
 	images(width?: number): readonly string[] {
 		const images = this.claimValues('P18')
-			.filter((o): o is Readonly<ClaimSnakString> => o.type === 'string')
+			.filter((o): o is Readonly<StringSnakValue> => o.type === 'string')
 			.map(o => getImageUrl(o.value, width))
 			.map(o => encodeURI(o));
 		return images;
@@ -133,7 +133,7 @@ export class WikibaseEntityReader {
 
 	unicodeChars(): readonly string[] {
 		return this.claimValues('P487')
-			.filter((o): o is Readonly<ClaimSnakString> => o.type === 'string')
+			.filter((o): o is Readonly<StringSnakValue> => o.type === 'string')
 			.map(o => o.value);
 	}
 
