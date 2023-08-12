@@ -19,7 +19,7 @@ export class WikibaseEntityReader {
 	constructor(
 		public readonly entity: Readonly<Entity>,
 		/** LanguageCode which is used as a fallback. Defaults to 'en'. */
-		private readonly defaultLanguageCode: string = 'en',
+		private readonly defaultLanguageCode = 'en',
 	) {}
 
 	/** Returns the id / Q-Number of the entity */
