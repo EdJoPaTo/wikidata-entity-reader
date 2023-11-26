@@ -29,12 +29,12 @@
 		"wikibase-sdk": "^9.2.2"
 	},
 	"devDependencies": {
-		"@sindresorhus/tsconfig": "^4.0.0",
+		"@sindresorhus/tsconfig": "^5.0.0",
 		"ava": "^5.0.1",
 		"c8": "^8.0.1",
 		"del-cli": "^5.0.0",
 		"typescript": "^5.0.2",
-		"xo": "^0.55.1"
+		"xo": "^0.56.0"
 	},
 	"files": [
 		"dist/source",
