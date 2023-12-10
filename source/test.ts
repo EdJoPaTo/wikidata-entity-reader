@@ -1,96 +1,99 @@
+import {deepStrictEqual, strictEqual} from 'node:assert';
 import {readFileSync} from 'node:fs';
-import test from 'ava';
+import {test} from 'node:test';
 import type {Entity} from 'wikibase-sdk';
-import {WikibaseEntityReader} from '../source/index.js';
+import {WikibaseEntityReader} from './index.js';
 
 const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8')) as Entity;
-const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8')) as Entity;
+const entityHuman = JSON.parse(
+	readFileSync('test/human.json', 'utf8'),
+) as Entity;
 
 const minimalEntity = {
 	type: 'item',
 	id: 'Q2',
 } as const satisfies Entity;
 
-test('qNumber', t => {
+await test('qNumber', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.qNumber(), 'Q5');
+	strictEqual(reader.qNumber(), 'Q5');
 });
 
-test('label with default lang en', t => {
+await test('label with default lang en', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.label(), 'human');
+	strictEqual(reader.label(), 'human');
 });
 
-test('label with lang by argument', t => {
+await test('label with lang by argument', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.label('de'), 'Mensch');
+	strictEqual(reader.label('de'), 'Mensch');
 });
 
-test('label with lang by constructor', t => {
+await test('label with lang by constructor', () => {
 	const reader = new WikibaseEntityReader(entityHuman, 'de');
-	t.is(reader.label(), 'Mensch');
+	strictEqual(reader.label(), 'Mensch');
 });
 
-test('label not existing', t => {
+await test('label not existing', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.label('undefined language'), 'Q5');
+	strictEqual(reader.label('undefined language'), 'Q5');
 });
 
-test('label with country lang falls back base lang', t => {
+await test('label with country lang falls back base lang', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.label('de-somewhere'), 'Mensch');
+	strictEqual(reader.label('de-somewhere'), 'Mensch');
 });
 
-test('label from item without labels', t => {
+await test('label from item without labels', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.is(reader.label(), 'Q2');
+	strictEqual(reader.label(), 'Q2');
 });
 
-test('description with default lang en', t => {
+await test('description with default lang en', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(
+	strictEqual(
 		reader.description(),
 		'common name of Homo sapiens, unique extant species of the genus Homo, from embryo to adult',
 	);
 });
 
-test('description with lang by argument', t => {
+await test('description with lang by argument', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(
+	strictEqual(
 		reader.description('de'),
 		'höheres Säugetier aus der Ordnung der Primaten',
 	);
 });
 
-test('description with lang by constructor', t => {
+await test('description with lang by constructor', () => {
 	const reader = new WikibaseEntityReader(entityHuman, 'de');
-	t.is(
+	strictEqual(
 		reader.description(),
 		'höheres Säugetier aus der Ordnung der Primaten',
 	);
 });
 
-test('description not existing', t => {
+await test('description not existing', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.description('undefined language'), undefined);
+	strictEqual(reader.description('undefined language'), undefined);
 });
 
-test('description with country lang falls back base lang', t => {
+await test('description with country lang falls back base lang', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(
+	strictEqual(
 		reader.description('de-somewhere'),
 		'höheres Säugetier aus der Ordnung der Primaten',
 	);
 });
 
-test('description from item without descriptions', t => {
+await test('description from item without descriptions', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.is(reader.description(), undefined);
+	strictEqual(reader.description(), undefined);
 });
 
-test('aliases with default lang en', t => {
+await test('aliases with default lang en', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.aliases(), [
+	deepStrictEqual(reader.aliases(), [
 		'human being',
 		'humankind',
 		'people',
@@ -103,9 +106,9 @@ test('aliases with default lang en', t => {
 	]);
 });
 
-test('aliases with lang by argument', t => {
+await test('aliases with lang by argument', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.aliases('de'), [
+	deepStrictEqual(reader.aliases('de'), [
 		'Homo sapiens',
 		'Person',
 		'Homo sapiens sapiens',
@@ -114,9 +117,9 @@ test('aliases with lang by argument', t => {
 	]);
 });
 
-test('aliases with lang by constructor', t => {
+await test('aliases with lang by constructor', () => {
 	const reader = new WikibaseEntityReader(entityHuman, 'de');
-	t.deepEqual(reader.aliases(), [
+	deepStrictEqual(reader.aliases(), [
 		'Homo sapiens',
 		'Person',
 		'Homo sapiens sapiens',
@@ -125,24 +128,24 @@ test('aliases with lang by constructor', t => {
 	]);
 });
 
-test('aliases not existing', t => {
+await test('aliases not existing', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.aliases('undefined language'), []);
+	deepStrictEqual(reader.aliases('undefined language'), []);
 });
 
-test('aliases from item without aliases', t => {
+await test('aliases from item without aliases', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.deepEqual(reader.aliases(), []);
+	deepStrictEqual(reader.aliases(), []);
 });
 
-test('url', t => {
+await test('url', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.url(), 'https://www.wikidata.org/wiki/Q5');
+	strictEqual(reader.url(), 'https://www.wikidata.org/wiki/Q5');
 });
 
-test('allSitelinks', t => {
+await test('allSitelinks', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.allSitelinks(), [
+	deepStrictEqual(reader.allSitelinks(), [
 		'acewiki',
 		'afwiki',
 		'alswiki',
@@ -400,53 +403,56 @@ test('allSitelinks', t => {
 	]);
 });
 
-test('allSitelinks on entity without sitelinks', t => {
+await test('allSitelinks on entity without sitelinks', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.deepEqual(reader.allSitelinks(), []);
+	deepStrictEqual(reader.allSitelinks(), []);
 });
 
-test('allSitelinksinLang with default lang en', t => {
+await test('allSitelinksinLang with default lang en', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.allSitelinksInLang(), ['enwiki', 'enwikiquote']);
+	deepStrictEqual(reader.allSitelinksInLang(), ['enwiki', 'enwikiquote']);
 });
 
-test('allSitelinksinLang with lang by argument', t => {
+await test('allSitelinksinLang with lang by argument', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.allSitelinksInLang('ru'), [
+	deepStrictEqual(reader.allSitelinksInLang('ru'), [
 		'ruwiki',
 		'ruwikinews',
 		'ruwikiquote',
 	]);
 });
 
-test('allSitelinksinLang with lang by constructor', t => {
+await test('allSitelinksinLang with lang by constructor', () => {
 	const reader = new WikibaseEntityReader(entityHuman, 'ru');
-	t.deepEqual(reader.allSitelinksInLang(), [
+	deepStrictEqual(reader.allSitelinksInLang(), [
 		'ruwiki',
 		'ruwikinews',
 		'ruwikiquote',
 	]);
 });
 
-test('sitelinkUrl', t => {
+await test('sitelinkUrl', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.is(reader.sitelinkUrl('dewiki'), 'https://de.wikipedia.org/wiki/Mensch');
+	strictEqual(
+		reader.sitelinkUrl('dewiki'),
+		'https://de.wikipedia.org/wiki/Mensch',
+	);
 });
 
-test('sitelinkUrl not existing', t => {
+await test('sitelinkUrl not existing', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
 	// @ts-expect-error undefined site
-	t.is(reader.sitelinkUrl('undefined site'), undefined);
+	strictEqual(reader.sitelinkUrl('undefined site'), undefined);
 });
 
-test('sitelinkUrl from item without sitelinks', t => {
+await test('sitelinkUrl from item without sitelinks', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.is(reader.sitelinkUrl('dewiki'), undefined);
+	strictEqual(reader.sitelinkUrl('dewiki'), undefined);
 });
 
-test('allClaims', t => {
+await test('allClaims', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.allClaims(), [
+	deepStrictEqual(reader.allClaims(), [
 		'P527',
 		'P1552',
 		'P361',
@@ -543,45 +549,45 @@ test('allClaims', t => {
 	]);
 });
 
-test('allClaims on entity without claims', t => {
+await test('allClaims on entity without claims', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
-	t.deepEqual(reader.allClaims(), []);
+	deepStrictEqual(reader.allClaims(), []);
 });
 
-test('claim', t => {
+await test('claim', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.claim('P18').map(o => o.mainsnak.datavalue?.value), [
+	deepStrictEqual(reader.claim('P18').map(o => o.mainsnak.datavalue?.value), [
 		'Anterior view of human female and male, with labels.svg',
 	]);
 });
 
-test('claim not existing', t => {
+await test('claim not existing', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
 	// @ts-expect-error not a PropertyId
-	t.deepEqual(reader.claim('unknown claim'), []);
+	deepStrictEqual(reader.claim('unknown claim'), []);
 });
 
-test('claim from item without claims', t => {
+await test('claim from item without claims', () => {
 	const reader = new WikibaseEntityReader(minimalEntity);
 	// @ts-expect-error not a PropertyId
-	t.deepEqual(reader.claim('unknown claim'), []);
+	deepStrictEqual(reader.claim('unknown claim'), []);
 });
 
-test('images', t => {
+await test('images', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.images(), [
+	deepStrictEqual(reader.images(), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg',
 	]);
 });
 
-test('images with width', t => {
+await test('images with width', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	t.deepEqual(reader.images(42), [
+	deepStrictEqual(reader.images(42), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg?width=42',
 	]);
 });
 
-test('unicodeChars', t => {
+await test('unicodeChars', () => {
 	const reader = new WikibaseEntityReader(entityCat);
-	t.deepEqual(reader.unicodeChars(), ['🐈', '🐱']);
+	deepStrictEqual(reader.unicodeChars(), ['🐈', '🐱']);
 });
