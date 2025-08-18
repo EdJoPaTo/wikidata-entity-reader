@@ -2,7 +2,7 @@ import {deepStrictEqual, strictEqual} from 'node:assert';
 import {readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import type {Entity} from 'wikibase-sdk';
-import {WikibaseEntityReader} from './index.js';
+import {WikibaseEntityReader} from './index.ts';
 
 const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8')) as Entity;
 const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8')) as Entity;
