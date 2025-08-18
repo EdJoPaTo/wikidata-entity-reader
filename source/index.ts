@@ -30,7 +30,7 @@ export class WikibaseEntityReader {
 	/** Returns the label in the given languageCode (or the default one from the constructor) */
 	label(languageCode = this.defaultLanguageCode): string {
 		const labels = 'labels' in this.entity
-			&& this.entity.labels as Record<string, Term>;
+			&& (this.entity.labels as Record<string, Term>);
 		if (!labels) {
 			return this.entity.id;
 		}
@@ -43,7 +43,7 @@ export class WikibaseEntityReader {
 	/** Returns the description in the given languageCode (or the default one from the constructor) */
 	description(languageCode = this.defaultLanguageCode): string | undefined {
 		const descriptions = 'descriptions' in this.entity
-			&& this.entity.descriptions as Record<string, Term>;
+			&& (this.entity.descriptions as Record<string, Term>);
 		if (!descriptions) {
 			return undefined;
 		}
@@ -54,7 +54,7 @@ export class WikibaseEntityReader {
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
 		const aliases = 'aliases' in this.entity
-			&& this.entity.aliases as Record<string, Term[]>;
+			&& (this.entity.aliases as Record<string, Term[]>);
 		if (!aliases) {
 			return [];
 		}
@@ -78,8 +78,7 @@ export class WikibaseEntityReader {
 	}
 
 	allSitelinksInLang(lang = this.defaultLanguageCode): Site[] {
-		return this.allSitelinks()
-			.filter(o => getSitelinkData(o).lang === lang);
+		return this.allSitelinks().filter(o => getSitelinkData(o).lang === lang);
 	}
 
 	sitelinkUrl(site: Site): string | undefined {

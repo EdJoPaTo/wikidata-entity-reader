@@ -16,13 +16,13 @@ npm install wikidata-entity-reader
 ## Usage
 
 ```ts
-import { WikibaseEntityReader } from 'wikidata-entity-reader';
+import { WikibaseEntityReader } from "wikidata-entity-reader";
 
-const reader = new WikibaseEntityReader(entity, 'en');
+const reader = new WikibaseEntityReader(entity, "en");
 
 reader.label();
 //=> 'human'
 
-reader.label('de');
+reader.label("de");
 //=> 'Mensch'
 ```

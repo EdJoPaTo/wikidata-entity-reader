@@ -5,9 +5,7 @@ import type {Entity} from 'wikibase-sdk';
 import {WikibaseEntityReader} from './index.js';
 
 const entityCat = JSON.parse(readFileSync('test/cat.json', 'utf8')) as Entity;
-const entityHuman = JSON.parse(
-	readFileSync('test/human.json', 'utf8'),
-) as Entity;
+const entityHuman = JSON.parse(readFileSync('test/human.json', 'utf8')) as Entity;
 
 const minimalEntity = {
 	type: 'item',
@@ -556,9 +554,10 @@ await test('allClaims on entity without claims', () => {
 
 await test('claim', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	deepStrictEqual(reader.claim('P18').map(o => o.mainsnak.datavalue?.value), [
-		'Anterior view of human female and male, with labels.svg',
-	]);
+	deepStrictEqual(
+		reader.claim('P18').map(o => o.mainsnak.datavalue?.value),
+		['Anterior view of human female and male, with labels.svg'],
+	);
 });
 
 await test('claim not existing', () => {
