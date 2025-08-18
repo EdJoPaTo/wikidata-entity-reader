@@ -16,11 +16,18 @@ import {
 } from 'wikibase-sdk';
 
 export class WikibaseEntityReader {
+	public readonly entity: Readonly<Entity>;
+
+	private readonly defaultLanguageCode: string;
+
 	constructor(
-		public readonly entity: Readonly<Entity>,
+		entity: Readonly<Entity>,
 		/** LanguageCode which is used as a fallback. Defaults to 'en'. */
-		private readonly defaultLanguageCode = 'en',
-	) {}
+		defaultLanguageCode = 'en',
+	) {
+		this.entity = entity;
+		this.defaultLanguageCode = defaultLanguageCode;
+	}
 
 	/** Returns the id / Q-Number of the entity */
 	qNumber(): EntityId {

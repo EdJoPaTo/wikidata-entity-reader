@@ -45,6 +45,12 @@
 	"xo": [
 		{
 			"rules": {
+				"@typescript-eslint/parameter-properties": [
+					"error",
+					{
+						"prefer": "class-property"
+					}
+				],
 				"@typescript-eslint/prefer-readonly-parameter-types": "warn"
 			}
 		},
