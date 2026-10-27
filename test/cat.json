@@ -3262,10 +3262,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P4970"
-				],
+				"qualifiers-order": ["P1810", "P4970"],
 				"id": "q146$0d7ca6ae-4947-9759-ecd6-994efdb03ceb",
 				"rank": "normal"
 			}
@@ -3440,12 +3437,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P227",
-							"P407",
-							"P813"
-						]
+						"snaks-order": ["P248", "P227", "P407", "P813"]
 					}
 				]
 			},
@@ -3531,12 +3523,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P227",
-							"P407",
-							"P813"
-						]
+						"snaks-order": ["P248", "P227", "P407", "P813"]
 					}
 				]
 			}
@@ -3728,11 +3715,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -3824,11 +3807,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P580",
-					"P1480",
-					"P3005"
-				],
+				"qualifiers-order": ["P580", "P1480", "P3005"],
 				"id": "Q146$77588ba6-4862-0209-7ac7-2c11b7157525",
 				"rank": "normal",
 				"references": [
@@ -3882,11 +3861,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P356",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P356", "P1476", "P813"]
 					}
 				]
 			},
@@ -4022,9 +3997,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			},
@@ -4156,9 +4129,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P51"
-				],
+				"qualifiers-order": ["P51"],
 				"id": "Q146$5e775618-4888-0e54-2855-69d70e9ac14f",
 				"rank": "normal",
 				"references": [
@@ -4182,9 +4153,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143"
-						]
+						"snaks-order": ["P143"]
 					}
 				]
 			},
@@ -4218,9 +4187,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P51"
-				],
+				"qualifiers-order": ["P51"],
 				"id": "Q146$7ee77444-4d65-5fba-6b4d-16e17dc1dc3c",
 				"rank": "normal",
 				"references": [
@@ -4244,9 +4211,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143"
-						]
+						"snaks-order": ["P143"]
 					}
 				]
 			}
@@ -4278,9 +4243,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$2EABDBDF-7C75-499B-A6E0-B4CCCF5A4584",
 				"rank": "normal"
 			},
@@ -4314,9 +4277,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P2241"
-				],
+				"qualifiers-order": ["P2241"],
 				"id": "Q146$B3346790-8FD2-4F05-97C6-F7544416E04A",
 				"rank": "deprecated"
 			}
@@ -4356,9 +4317,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$8ED24A64-819A-41C4-B2AF-CE60BF39C6A8",
 				"rank": "normal"
 			},
@@ -4396,9 +4355,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$2f8e0ca8-4f57-c425-fff5-0c0c02f43e30",
 				"rank": "normal"
 			},
@@ -4436,9 +4393,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$080518f3-4ad2-9e72-b01e-d8e90fc74910",
 				"rank": "normal"
 			},
@@ -4476,9 +4431,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$858f05bf-4633-89ad-ae1d-266cbb911e29",
 				"rank": "normal"
 			},
@@ -4516,9 +4469,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$2f215a97-40fb-3737-b788-52c12299ef21",
 				"rank": "normal"
 			},
@@ -4556,9 +4507,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$B9311BBC-0B8D-4335-A9A8-6363B55A3BD1",
 				"rank": "normal"
 			},
@@ -4611,10 +4560,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P585"
-				],
+				"qualifiers-order": ["P1810", "P585"],
 				"id": "Q146$4BEDD4F0-4FE1-4366-B224-03B350706C46",
 				"rank": "normal"
 			},
@@ -4652,9 +4598,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q146$b177ffe8-4ba0-ed60-93fb-7a28d65f6d8c",
 				"rank": "normal"
 			}
@@ -4721,11 +4665,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407",
-					"P580",
-					"P1810"
-				],
+				"qualifiers-order": ["P407", "P580", "P1810"],
 				"id": "Q146$59e5a701-440a-902d-52b6-0fa35a8f7e2b",
 				"rank": "normal"
 			},
@@ -4771,10 +4711,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407",
-					"P1810"
-				],
+				"qualifiers-order": ["P407", "P1810"],
 				"id": "Q146$ff061443-4342-c061-c741-b2e49bf6610f",
 				"rank": "normal"
 			},
@@ -4820,10 +4757,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407",
-					"P1810"
-				],
+				"qualifiers-order": ["P407", "P1810"],
 				"id": "Q146$fc2448eb-4218-09d7-f7c4-edf0d263ee90",
 				"rank": "normal"
 			}
@@ -4885,9 +4819,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P585"
-				],
+				"qualifiers-order": ["P585"],
 				"id": "Q146$EAD3F025-E38C-47BF-A2B7-3E1B7EE20647",
 				"rank": "normal"
 			}
@@ -4919,9 +4851,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$7D1CB046-4443-4EA2-8C35-2F7D6A6A7BDA",
 				"rank": "normal"
 			}
@@ -5053,10 +4983,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P4970"
-				],
+				"qualifiers-order": ["P1810", "P4970"],
 				"id": "Q146$CAC6F8BA-D646-4DFF-95E4-7C0E912D7418",
 				"rank": "normal"
 			}
@@ -5181,9 +5108,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P6254"
-				],
+				"qualifiers-order": ["P6254"],
 				"id": "Q146$a47db006-45a3-b0e5-da8b-4d58174de5da",
 				"rank": "normal"
 			}
@@ -5283,9 +5208,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$0112F17C-1150-409E-889A-73F4E97ABFCC",
 				"rank": "normal"
 			}
@@ -5321,9 +5244,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407"
-				],
+				"qualifiers-order": ["P407"],
 				"id": "Q146$93FF95C9-C285-4EBD-98E2-5D8253E4FA73",
 				"rank": "normal",
 				"references": [
@@ -5359,10 +5280,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P4656"]
 					}
 				]
 			},
@@ -5396,9 +5314,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407"
-				],
+				"qualifiers-order": ["P407"],
 				"id": "Q146$D6B8D564-0154-48E1-846B-3124876E2085",
 				"rank": "normal"
 			}
@@ -5486,10 +5402,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P4970",
-					"P1810"
-				],
+				"qualifiers-order": ["P4970", "P1810"],
 				"id": "Q146$5AAE64ED-65B3-437D-BB74-7178377771AE",
 				"rank": "normal"
 			}
@@ -5628,9 +5541,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P642"
-				],
+				"qualifiers-order": ["P642"],
 				"id": "Q146$4896623e-4185-e3d6-d2d7-eef771cf1d1a",
 				"rank": "normal"
 			}
@@ -5679,9 +5590,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$DD476C28-46A8-429D-9902-5F79AC570F86",
 				"rank": "normal"
 			},
@@ -5715,9 +5624,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P2241"
-				],
+				"qualifiers-order": ["P2241"],
 				"id": "Q146$87F39F4F-5021-4E35-9EAB-C1195C08ACA4",
 				"rank": "deprecated"
 			}
@@ -5816,9 +5723,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P518"
-				],
+				"qualifiers-order": ["P518"],
 				"id": "Q146$11e44413-4fbd-44c2-b3b8-910ab9871a47",
 				"rank": "normal",
 				"references": [
@@ -5872,11 +5777,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			},
@@ -5915,9 +5816,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P518"
-				],
+				"qualifiers-order": ["P518"],
 				"id": "Q146$6f01c585-43db-3886-a520-0cf9367f70e1",
 				"rank": "normal",
 				"references": [
@@ -5960,10 +5859,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813"
-						]
+						"snaks-order": ["P248", "P813"]
 					}
 				]
 			}
@@ -6046,10 +5942,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813"
-						]
+						"snaks-order": ["P248", "P813"]
 					}
 				]
 			}
@@ -6112,10 +6005,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813"
-						]
+						"snaks-order": ["P248", "P813"]
 					}
 				]
 			}
@@ -6170,10 +6060,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1480",
-					"P805"
-				],
+				"qualifiers-order": ["P1480", "P805"],
 				"id": "Q146$c48871cd-42e3-9f38-1770-37836d327832",
 				"rank": "normal",
 				"references": [
@@ -6197,9 +6084,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143"
-						]
+						"snaks-order": ["P143"]
 					}
 				]
 			}
@@ -6356,9 +6241,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P747"
-				],
+				"qualifiers-order": ["P747"],
 				"id": "Q146$DCF96C22-6BD8-4D46-B9C3-E3980752D615",
 				"rank": "normal"
 			}
@@ -6390,9 +6273,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$4b0e5c76-46ab-a93a-69b7-ecc76763d8e8",
 				"rank": "normal"
 			}
@@ -6481,9 +6362,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$fbbb8a2f-4131-80cb-bf63-0082774acc92",
 				"rank": "normal"
 			}
@@ -6892,9 +6771,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$FF366E94-A4A8-437F-963B-A5F3FB349DB6",
 				"rank": "normal"
 			}
@@ -6967,9 +6844,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -7001,9 +6876,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$2BEF1D23-2B94-4FB0-84E1-D0C2BF7505CF",
 				"rank": "normal"
 			}
@@ -7069,9 +6942,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$e1cacac5-c412-465b-95c7-0817aa5e46ec",
 				"rank": "normal"
 			}
@@ -7112,9 +6983,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -7180,9 +7049,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$52DFC765-FFA6-4FF5-BD12-44F9F3C5494B",
 				"rank": "normal"
 			},
@@ -7212,9 +7079,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$151A23F8-8C60-4CE8-9928-6AA31A8E8806",
 				"rank": "normal"
 			}
@@ -7272,9 +7137,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -7363,11 +7226,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813",
-							"P854"
-						]
+						"snaks-order": ["P248", "P813", "P854"]
 					}
 				]
 			}
@@ -7464,9 +7323,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			},
@@ -7501,9 +7358,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			},
@@ -7572,11 +7427,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -7642,9 +7493,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$67292ca0-4664-8267-793d-7767b6a05d1b",
 				"rank": "normal"
 			},
@@ -7674,9 +7523,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q146$1FE317E1-843C-4486-AF8F-F9EF825AAC79",
 				"rank": "normal"
 			}
@@ -7747,11 +7594,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -7813,9 +7656,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P3452"
-						]
+						"snaks-order": ["P3452"]
 					}
 				]
 			}
@@ -7875,11 +7716,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P407",
-					"P9675"
-				],
+				"qualifiers-order": ["P1810", "P407", "P9675"],
 				"id": "Q146$58E4D467-7AFC-4A9F-A07A-0C6CB57A6FBF",
 				"rank": "normal",
 				"references": [
@@ -7933,11 +7770,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -8023,9 +7856,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3740"
-				],
+				"qualifiers-order": ["P3740"],
 				"id": "Q146$ABC64BBD-CA8D-4A94-9D79-6911911FD5CA",
 				"rank": "normal"
 			},
@@ -8058,9 +7889,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3740"
-				],
+				"qualifiers-order": ["P3740"],
 				"id": "Q146$FDB82652-454A-4F08-8825-5697BFE29C6F",
 				"rank": "normal"
 			}
@@ -8125,9 +7954,7 @@
 		"afwiki": {
 			"site": "afwiki",
 			"title": "Kat",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://af.wikipedia.org/wiki/Kat"
 		},
 		"alswiki": {
@@ -8367,9 +8194,7 @@
 		"cawiki": {
 			"site": "cawiki",
 			"title": "Gat",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://ca.wikipedia.org/wiki/Gat"
 		},
 		"cawikiquote": {
@@ -8513,9 +8338,7 @@
 		"elwiki": {
 			"site": "elwiki",
 			"title": "Γάτα",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://el.wikipedia.org/wiki/%CE%93%CE%AC%CF%84%CE%B1"
 		},
 		"emlwiki": {
@@ -8527,9 +8350,7 @@
 		"enwiki": {
 			"site": "enwiki",
 			"title": "Cat",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://en.wikipedia.org/wiki/Cat"
 		},
 		"enwikinews": {
@@ -8547,9 +8368,7 @@
 		"eowiki": {
 			"site": "eowiki",
 			"title": "Hejma kato",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://eo.wikipedia.org/wiki/Hejma_kato"
 		},
 		"eowikiquote": {
@@ -8561,9 +8380,7 @@
 		"eswiki": {
 			"site": "eswiki",
 			"title": "Felis silvestris catus",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://es.wikipedia.org/wiki/Felis_silvestris_catus"
 		},
 		"eswikiquote": {
@@ -8653,9 +8470,7 @@
 		"frwiki": {
 			"site": "frwiki",
 			"title": "Chat",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://fr.wikipedia.org/wiki/Chat"
 		},
 		"frwikiquote": {
@@ -8703,9 +8518,7 @@
 		"glwiki": {
 			"site": "glwiki",
 			"title": "Gato",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://gl.wikipedia.org/wiki/Gato"
 		},
 		"gnwiki": {
@@ -8807,9 +8620,7 @@
 		"huwiki": {
 			"site": "huwiki",
 			"title": "Macska",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://hu.wikipedia.org/wiki/Macska"
 		},
 		"huwikiquote": {
@@ -9025,9 +8836,7 @@
 		"lawiki": {
 			"site": "lawiki",
 			"title": "Feles",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://la.wikipedia.org/wiki/Feles"
 		},
 		"lbewiki": {
@@ -9099,9 +8908,7 @@
 		"ltwiki": {
 			"site": "ltwiki",
 			"title": "Katė",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://lt.wikipedia.org/wiki/Kat%C4%97"
 		},
 		"ltwikiquote": {
@@ -9155,9 +8962,7 @@
 		"mlwiki": {
 			"site": "mlwiki",
 			"title": "പൂച്ച",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%82%E0%B4%9A%E0%B5%8D%E0%B4%9A"
 		},
 		"mlwikiquote": {
@@ -9877,9 +9682,7 @@
 		"zh_yuewiki": {
 			"site": "zh_yuewiki",
 			"title": "貓",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://zh-yue.wikipedia.org/wiki/%E8%B2%93"
 		},
 		"zhwiki": {

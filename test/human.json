@@ -4228,11 +4228,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P813",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P813", "P4656"]
 					}
 				]
 			},
@@ -4306,11 +4302,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P813",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P813", "P4656"]
 					}
 				]
 			},
@@ -4384,11 +4376,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P813",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P813", "P4656"]
 					}
 				]
 			}
@@ -4520,9 +4508,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P366"
-				],
+				"qualifiers-order": ["P366"],
 				"id": "Q5$6802a43f-4f14-7ba8-2f4a-8dd5a85b0c8c",
 				"rank": "normal"
 			},
@@ -4639,10 +4625,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P577"
-						]
+						"snaks-order": ["P248", "P577"]
 					}
 				]
 			}
@@ -4682,9 +4665,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q5$a190f8fb-4a3d-2786-d46b-e4cf24c01b94",
 				"rank": "normal"
 			},
@@ -4722,9 +4703,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q5$ffa68f24-4297-3827-e13b-6fc1ea3808d3",
 				"rank": "normal"
 			},
@@ -4762,9 +4741,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q5$b804b493-44bd-4377-9a22-637e540f5a18",
 				"rank": "normal"
 			},
@@ -4798,9 +4775,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P958"
-				],
+				"qualifiers-order": ["P958"],
 				"id": "Q5$E283C09D-AFF6-45AE-82C7-EA6BD95B653E",
 				"rank": "normal"
 			},
@@ -4852,9 +4827,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q5$63e9b1e5-4739-8c61-6bfd-c60f1556d0b7",
 				"rank": "normal"
 			},
@@ -4892,9 +4865,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P805"
-				],
+				"qualifiers-order": ["P805"],
 				"id": "Q5$3ae02d19-46bd-01dc-f5a7-81284825eae6",
 				"rank": "normal"
 			}
@@ -5859,11 +5830,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P4970",
-					"P4070"
-				],
+				"qualifiers-order": ["P1810", "P4970", "P4070"],
 				"id": "Q5$7ECD1D9E-850A-4852-8EB3-683748738963",
 				"rank": "normal"
 			}
@@ -6043,10 +6010,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P4656"]
 					}
 				]
 			},
@@ -6101,10 +6065,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P4656"]
 					}
 				]
 			}
@@ -6235,11 +6196,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P143",
-							"P813",
-							"P4656"
-						]
+						"snaks-order": ["P143", "P813", "P4656"]
 					}
 				]
 			}
@@ -6303,9 +6260,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -6395,9 +6350,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -6497,9 +6450,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P585"
-				],
+				"qualifiers-order": ["P585"],
 				"id": "Q5$96611468-A2CD-47D5-ACC1-428CA396ED4F",
 				"rank": "normal"
 			}
@@ -6611,9 +6562,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			},
@@ -6765,9 +6714,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					},
 					{
 						"hash": "5944bcf1fa7c5059c9dc09a67e094f4f757c1c10",
@@ -6785,9 +6732,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			},
@@ -6846,9 +6791,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P11527"
-				],
+				"qualifiers-order": ["P11527"],
 				"id": "Q5$913761A9-9588-4AB1-82B6-58E19DFEB8AA",
 				"rank": "normal",
 				"references": [
@@ -6868,9 +6811,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P4656"
-						]
+						"snaks-order": ["P4656"]
 					}
 				]
 			},
@@ -6908,9 +6849,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P11527"
-				],
+				"qualifiers-order": ["P11527"],
 				"id": "Q5$1506d8df-4fba-ce45-4625-9353978194e7",
 				"rank": "normal"
 			},
@@ -6948,9 +6887,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P11527"
-				],
+				"qualifiers-order": ["P11527"],
 				"id": "Q5$196758bc-452f-464e-a8d2-f0f34aa6292a",
 				"rank": "normal"
 			},
@@ -6988,9 +6925,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P11527"
-				],
+				"qualifiers-order": ["P11527"],
 				"id": "Q5$89fdb133-41c8-d4f3-be60-9813add62b51",
 				"rank": "normal"
 			},
@@ -7028,9 +6963,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P11527"
-				],
+				"qualifiers-order": ["P11527"],
 				"id": "Q5$ec3f4cab-4c54-9b42-11c1-87732834a56c",
 				"rank": "normal"
 			},
@@ -7100,11 +7033,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1013",
-					"P2868",
-					"P11527"
-				],
+				"qualifiers-order": ["P1013", "P2868", "P11527"],
 				"id": "Q5$0320399f-43f1-7d04-b130-197dc21b6e45",
 				"rank": "normal",
 				"references": [
@@ -7139,10 +7068,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P1476",
-							"P854"
-						]
+						"snaks-order": ["P1476", "P854"]
 					}
 				]
 			}
@@ -7373,9 +7299,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P642"
-				],
+				"qualifiers-order": ["P642"],
 				"id": "Q5$82b80d5f-4353-c7cb-1a3c-c0c8f4f5f237",
 				"rank": "normal"
 			}
@@ -7475,9 +7399,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$a13037b6-4506-6452-6201-24231bbc1294",
 				"rank": "normal"
 			}
@@ -7622,10 +7544,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813"
-						]
+						"snaks-order": ["P248", "P813"]
 					}
 				]
 			}
@@ -7682,9 +7601,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P407"
-				],
+				"qualifiers-order": ["P407"],
 				"id": "Q5$4a45fc28-d47c-4be7-bba3-bd6a19185ab9",
 				"rank": "normal",
 				"references": [
@@ -7704,9 +7621,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854"
-						]
+						"snaks-order": ["P854"]
 					}
 				]
 			}
@@ -7772,9 +7687,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$684DB002-89A9-4C81-869B-832E028EFFEE",
 				"rank": "normal"
 			}
@@ -7888,9 +7801,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P2210"
-				],
+				"qualifiers-order": ["P2210"],
 				"id": "Q5$aa1a1268-4d5e-949e-447e-45890d402aa5",
 				"rank": "normal"
 			}
@@ -8007,9 +7918,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$3c9ecd0b-426d-40fe-afed-98d2d054ed31",
 				"rank": "normal"
 			}
@@ -8049,10 +7958,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P4970"
-				],
+				"qualifiers-order": ["P1810", "P4970"],
 				"id": "Q5$431DCA0A-8BC5-4AC3-9639-6B682657AF43",
 				"rank": "normal",
 				"references": [
@@ -8106,11 +8012,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -8308,12 +8210,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P227",
-							"P407",
-							"P813"
-						]
+						"snaks-order": ["P248", "P227", "P407", "P813"]
 					}
 				]
 			},
@@ -8399,12 +8296,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P227",
-							"P407",
-							"P813"
-						]
+						"snaks-order": ["P248", "P227", "P407", "P813"]
 					}
 				]
 			}
@@ -8580,11 +8472,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813",
-							"P854"
-						]
+						"snaks-order": ["P248", "P813", "P854"]
 					}
 				]
 			},
@@ -8654,11 +8542,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813",
-							"P854"
-						]
+						"snaks-order": ["P248", "P813", "P854"]
 					}
 				]
 			},
@@ -8728,11 +8612,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248",
-							"P813",
-							"P854"
-						]
+						"snaks-order": ["P248", "P813", "P854"]
 					}
 				]
 			}
@@ -8784,10 +8664,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831",
-					"P1552"
-				],
+				"qualifiers-order": ["P3831", "P1552"],
 				"id": "Q5$2B60534B-9009-48E4-9853-10B783FDCA2A",
 				"rank": "preferred"
 			},
@@ -8837,10 +8714,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1552",
-					"P3831"
-				],
+				"qualifiers-order": ["P1552", "P3831"],
 				"id": "Q5$ca0a197e-490c-6272-8b86-f1fdfb858876",
 				"rank": "preferred"
 			},
@@ -8874,9 +8748,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$d3c99102-4626-f9c2-60de-c38cacffebaf",
 				"rank": "normal"
 			},
@@ -8902,9 +8774,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1552"
-				],
+				"qualifiers-order": ["P1552"],
 				"id": "Q5$2c7a6616-4be2-7b6c-b50e-5ae4df7d9c02",
 				"rank": "normal"
 			},
@@ -8938,9 +8808,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$985457A6-9DC0-4562-923E-395FE00D8BE1",
 				"rank": "normal"
 			},
@@ -8974,9 +8842,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$08C11300-AED0-493F-9518-7076BA7649EB",
 				"rank": "normal"
 			},
@@ -9010,9 +8876,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$BB09A01C-7AC8-4CE9-9DA2-7394BF38E2D2",
 				"rank": "normal"
 			},
@@ -9046,9 +8910,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$23CB2FE3-7D14-4058-B623-8209C4AE2543",
 				"rank": "normal"
 			},
@@ -9082,9 +8944,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$6949450E-80B7-4AD4-89B3-30BCB5764669",
 				"rank": "normal"
 			},
@@ -9118,9 +8978,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P3831"
-				],
+				"qualifiers-order": ["P3831"],
 				"id": "Q5$496E2D46-C514-455D-8BCE-1B3DD3E2E11F",
 				"rank": "normal"
 			}
@@ -9152,9 +9010,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$5c3da25b-4c2a-374b-9eef-113b5c8d8e97",
 				"rank": "normal"
 			}
@@ -9229,9 +9085,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			},
@@ -9270,9 +9124,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P248"
-						]
+						"snaks-order": ["P248"]
 					}
 				]
 			}
@@ -9304,9 +9156,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$62CA623E-6A75-46D4-8AE6-12AC3A6F7027",
 				"rank": "normal"
 			}
@@ -9377,11 +9227,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -9466,9 +9312,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$bbb1d014-470a-efd7-9b5b-182333a91f86",
 				"rank": "normal"
 			}
@@ -9545,11 +9389,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810",
-					"P407",
-					"P9675"
-				],
+				"qualifiers-order": ["P1810", "P407", "P9675"],
 				"id": "Q5$0BE38AA7-51C3-4A64-AD37-DDDA87387BBA",
 				"rank": "normal",
 				"references": [
@@ -9603,11 +9443,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P1476",
-							"P813"
-						]
+						"snaks-order": ["P854", "P1476", "P813"]
 					}
 				]
 			}
@@ -9665,10 +9501,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P585",
-					"P459"
-				],
+				"qualifiers-order": ["P585", "P459"],
 				"id": "Q5$787146e8-445c-81ff-a0ab-51a9bb4c38df",
 				"rank": "normal",
 				"references": [
@@ -9707,10 +9540,7 @@
 								}
 							]
 						},
-						"snaks-order": [
-							"P854",
-							"P813"
-						]
+						"snaks-order": ["P854", "P813"]
 					}
 				]
 			}
@@ -9779,9 +9609,7 @@
 						}
 					]
 				},
-				"qualifiers-order": [
-					"P1810"
-				],
+				"qualifiers-order": ["P1810"],
 				"id": "Q5$4edb43be-4d2d-0ef3-3665-4096b6df7c1a",
 				"rank": "normal"
 			}
@@ -9831,9 +9659,7 @@
 		"afwiki": {
 			"site": "afwiki",
 			"title": "Mens",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://af.wikipedia.org/wiki/Mens"
 		},
 		"alswiki": {
@@ -9857,9 +9683,7 @@
 		"anwiki": {
 			"site": "anwiki",
 			"title": "Humán",
-			"badges": [
-				"Q70894304"
-			],
+			"badges": ["Q70894304"],
 			"url": "https://an.wikipedia.org/wiki/Hum%C3%A1n"
 		},
 		"arcwiki": {
@@ -10051,9 +9875,7 @@
 		"cawiki": {
 			"site": "cawiki",
 			"title": "Ésser humà",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://ca.wikipedia.org/wiki/%C3%89sser_hum%C3%A0"
 		},
 		"cdowiki": {
@@ -10167,9 +9989,7 @@
 		"enwiki": {
 			"site": "enwiki",
 			"title": "Human",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://en.wikipedia.org/wiki/Human"
 		},
 		"enwikiquote": {
@@ -10199,9 +10019,7 @@
 		"eswiki": {
 			"site": "eswiki",
 			"title": "Humano",
-			"badges": [
-				"Q70894304"
-			],
+			"badges": ["Q70894304"],
 			"url": "https://es.wikipedia.org/wiki/Humano"
 		},
 		"eswikinews": {
@@ -10231,9 +10049,7 @@
 		"euwiki": {
 			"site": "euwiki",
 			"title": "Gizaki",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://eu.wikipedia.org/wiki/Gizaki"
 		},
 		"fawiki": {
@@ -10281,9 +10097,7 @@
 		"frwiki": {
 			"site": "frwiki",
 			"title": "Homo sapiens sapiens",
-			"badges": [
-				"Q70894304"
-			],
+			"badges": ["Q70894304"],
 			"url": "https://fr.wikipedia.org/wiki/Homo_sapiens_sapiens"
 		},
 		"furwiki": {
@@ -10367,9 +10181,7 @@
 		"hewiki": {
 			"site": "hewiki",
 			"title": "אדם",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9D"
 		},
 		"hewikiquote": {
@@ -10753,9 +10565,7 @@
 		"mnwiki": {
 			"site": "mnwiki",
 			"title": "Хүн",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://mn.wikipedia.org/wiki/%D0%A5%D2%AF%D0%BD"
 		},
 		"mrwiki": {
@@ -10857,9 +10667,7 @@
 		"ocwiki": {
 			"site": "ocwiki",
 			"title": "Èsser uman",
-			"badges": [
-				"Q70894304"
-			],
+			"badges": ["Q70894304"],
 			"url": "https://oc.wikipedia.org/wiki/%C3%88sser_uman"
 		},
 		"orwiki": {
@@ -10937,9 +10745,7 @@
 		"ptwiki": {
 			"site": "ptwiki",
 			"title": "Humano",
-			"badges": [
-				"Q17437798"
-			],
+			"badges": ["Q17437798"],
 			"url": "https://pt.wikipedia.org/wiki/Humano"
 		},
 		"ptwikinews": {
@@ -11011,9 +10817,7 @@
 		"sawiki": {
 			"site": "sawiki",
 			"title": "मनुष्यः",
-			"badges": [
-				"Q17437796"
-			],
+			"badges": ["Q17437796"],
 			"url": "https://sa.wikipedia.org/wiki/%E0%A4%AE%E0%A4%A8%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AF%E0%A4%83"
 		},
 		"scnwiki": {

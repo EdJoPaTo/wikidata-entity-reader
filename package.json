@@ -3,27 +3,32 @@
 	"version": "4.1.1",
 	"description": "read information of wikidata entities in a simpler way",
 	"keywords": [
-		"wikidata",
-		"entity"
+		"entity",
+		"wikibase",
+		"wikidata"
 	],
 	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/EdJoPaTo/wikidata-entity-reader.git"
-	},
 	"author": {
 		"name": "EdJoPaTo",
 		"email": "wikibase-npm-package@edjopato.de",
 		"url": "https://edjopato.de"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EdJoPaTo/wikidata-entity-reader.git"
+	},
+	"files": [
+		"dist",
+		"!*.test.*",
+		"!test.*"
+	],
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "rm -rf ./dist && tsc",
 		"prepack": "npm run build",
-		"test": "tsc --sourceMap && xo && c8 --all node --test --enable-source-maps"
-	},
-	"type": "module",
-	"engines": {
-		"node": ">=14"
+		"test": "rm -rf ./dist && tsc --noEmit && oxlint && oxfmt --check && c8 --all node --enable-source-maps --test"
 	},
 	"dependencies": {
 		"wikibase-sdk": "^11.6.6"
@@ -31,36 +36,12 @@
 	"devDependencies": {
 		"@types/node": "^18.18.13",
 		"c8": "^11.0.0",
-		"typescript": "^6.0.2",
-		"xo": "^1.2.2"
+		"oxfmt": "^0.75.0",
+		"oxlint": "^1.90.0",
+		"oxlint-tsgolint": "^7.0.2005",
+		"typescript": "^7.0.2"
 	},
-	"files": [
-		"dist",
-		"!*.test.*",
-		"!test.*"
-	],
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"xo": [
-		{
-			"rules": {
-				"@typescript-eslint/parameter-properties": [
-					"error",
-					{
-						"prefer": "class-property"
-					}
-				],
-				"@typescript-eslint/prefer-readonly-parameter-types": "warn"
-			}
-		},
-		{
-			"files": [
-				"**/*.test.*",
-				"**/test.*"
-			],
-			"rules": {
-				"@typescript-eslint/prefer-readonly-parameter-types": "off"
-			}
-		}
-	]
+	"engines": {
+		"node": ">=14"
+	}
 }
