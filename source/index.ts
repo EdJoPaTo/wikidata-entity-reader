@@ -1,6 +1,5 @@
 import {
 	type Claim,
-	type Claims,
 	type Entity,
 	type EntityId,
 	getImageUrl,
@@ -8,10 +7,7 @@ import {
 	getSitelinkUrl,
 	type PropertyId,
 	type Site,
-	type Sitelinks,
-	type SnakValue,
-	type StringSnakValue,
-	type Term,
+	type SnakDataValue,
 	truthyPropertyClaims,
 } from 'wikibase-sdk';
 
@@ -36,8 +32,7 @@ export class WikibaseEntityReader {
 
 	/** Returns the label in the given languageCode (or the default one from the constructor) */
 	label(languageCode = this.defaultLanguageCode): string {
-		const labels = 'labels' in this.entity
-			&& (this.entity.labels as Record<string, Term>);
+		const labels = 'labels' in this.entity && this.entity.labels;
 		if (!labels) {
 			return this.entity.id;
 		}
@@ -50,7 +45,7 @@ export class WikibaseEntityReader {
 	/** Returns the description in the given languageCode (or the default one from the constructor) */
 	description(languageCode = this.defaultLanguageCode): string | undefined {
 		const descriptions = 'descriptions' in this.entity
-			&& (this.entity.descriptions as Record<string, Term>);
+			&& this.entity.descriptions;
 		if (!descriptions) {
 			return undefined;
 		}
@@ -61,7 +56,7 @@ export class WikibaseEntityReader {
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
 		const aliases = 'aliases' in this.entity
-			&& (this.entity.aliases as Record<string, Term[]>);
+			&& this.entity.aliases;
 		if (!aliases) {
 			return [];
 		}
@@ -81,7 +76,7 @@ export class WikibaseEntityReader {
 			return [];
 		}
 
-		return Object.keys(this.entity.sitelinks ?? {}) as Array<keyof Sitelinks>;
+		return typedKeys(this.entity.sitelinks ?? {});
 	}
 
 	allSitelinksInLang(lang = this.defaultLanguageCode): Site[] {
@@ -107,43 +102,59 @@ export class WikibaseEntityReader {
 			return [];
 		}
 
-		return Object.keys(this.entity.claims ?? {}) as Array<keyof Claims>;
+		return typedKeys(this.entity.claims ?? {});
 	}
 
-	/** Returns the array of information for the requested claim */
-	claim(claim: PropertyId): readonly Claim[] {
+	/**
+	 * Returns the array of information for the requested claim.
+	 *
+	 * @param truthy Prefer truthy claims, the ones with the best rank (first preferred, then normal).
+	 */
+	claim(claim: PropertyId, truthy = true): readonly Claim[] {
 		if (!('claims' in this.entity)) {
 			return [];
 		}
 
-		return this.entity.claims?.[claim] ?? [];
+		const claims = this.entity.claims?.[claim] ?? [];
+		if (truthy) {
+			return truthyPropertyClaims([...claims]);
+		}
+
+		return claims;
 	}
 
-	/** Return truthy claim values (first preferred, otherwise normal) */
-	claimValues(claim: PropertyId): readonly SnakValue[] {
-		const claims = this.claim(claim);
-		const truthy = truthyPropertyClaims([...claims]);
-		return truthy
-			.map(o => o.mainsnak.datavalue)
-			.filter((o): o is SnakValue => typeof o?.type === 'string');
+	claimDataValues(
+		claim: PropertyId,
+		truthy = true,
+	): ReadonlyArray<Readonly<SnakDataValue>> {
+		return this.claim(claim, truthy)
+			.map(o => o.mainsnak)
+			.filter(o => o.snaktype === 'value')
+			.map(o => o.datavalue);
+	}
+
+	claimStringDataValues(claim: PropertyId, truthy = true): readonly string[] {
+		return this.claimDataValues(claim, truthy)
+			.filter(o => o.type === 'string')
+			.map(o => o.value);
 	}
 
 	/** Returns the full image urls of the entity. Optional with the requested width. */
-	images(width?: number): readonly string[] {
-		const images = this.claimValues('P18')
-			.filter((o): o is Readonly<StringSnakValue> => o.type === 'string')
-			.map(o => getImageUrl(o.value, width))
-			.map(o => encodeURI(o));
-		return images;
+	imageUrls(width?: number, truthy = true): readonly string[] {
+		return this.claimStringDataValues('P18', truthy)
+			.map(filename => getImageUrl(filename, width))
+			.map(url => encodeURI(url));
 	}
 
-	unicodeChars(): readonly string[] {
-		return this.claimValues('P487')
-			.filter((o): o is Readonly<StringSnakValue> => o.type === 'string')
-			.map(o => o.value);
+	unicodeChars(truthy = true): readonly string[] {
+		return this.claimStringDataValues('P487', truthy);
 	}
 
 	#baseLanguageCode(languageCode: string) {
 		return languageCode.split('-')[0]!;
 	}
+}
+
+function typedKeys<K extends keyof any>(record: Readonly<Partial<Record<K, unknown>>>): K[] {
+	return Object.keys(record) as K[];
 }

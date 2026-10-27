@@ -552,12 +552,11 @@ await test('allClaims on entity without claims', () => {
 	deepStrictEqual(reader.allClaims(), []);
 });
 
-await test('claim', () => {
+await test('claimStringDataValues', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	deepStrictEqual(
-		reader.claim('P18').map(o => o.mainsnak.datavalue?.value),
-		['Anterior view of human female and male, with labels.svg'],
-	);
+	deepStrictEqual(reader.claimStringDataValues('P18'), [
+		'Anterior view of human female and male, with labels.svg',
+	]);
 });
 
 await test('claim not existing', () => {
@@ -574,14 +573,14 @@ await test('claim from item without claims', () => {
 
 await test('images', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	deepStrictEqual(reader.images(), [
+	deepStrictEqual(reader.imageUrls(), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg',
 	]);
 });
 
 await test('images with width', () => {
 	const reader = new WikibaseEntityReader(entityHuman);
-	deepStrictEqual(reader.images(42), [
+	deepStrictEqual(reader.imageUrls(42), [
 		'https://commons.wikimedia.org/wiki/Special:FilePath/Anterior%20view%20of%20human%20female%20and%20male,%20with%20labels.svg?width=42',
 	]);
 });
