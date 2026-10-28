@@ -33,42 +33,37 @@ export class WikibaseEntityReader {
 
 	/** Returns the label in the given languageCode (or the default one from the constructor) */
 	label(languageCode = this.defaultLanguageCode): string {
-		const labels = "labels" in this.entity && this.entity.labels;
-		// oxlint-disable-next-line typescript/strict-boolean-expressions
-		if (!labels) {
+		if (!("labels" in this.entity)) {
 			return this.entity.id;
 		}
 
 		return (
-			labels[languageCode]?.value ??
-			labels[this.#baseLanguageCode(languageCode)]?.value ??
+			this.entity.labels[languageCode]?.value ??
+			this.entity.labels[this.#baseLanguageCode(languageCode)]?.value ??
 			this.entity.id
 		);
 	}
 
 	/** Returns the description in the given languageCode (or the default one from the constructor) */
 	description(languageCode = this.defaultLanguageCode): string | undefined {
-		const descriptions = "descriptions" in this.entity && this.entity.descriptions;
-		// oxlint-disable-next-line typescript/strict-boolean-expressions
-		if (!descriptions) {
+		if (!("descriptions" in this.entity)) {
 			return undefined;
 		}
 
 		return (
-			descriptions[languageCode]?.value ?? descriptions[this.#baseLanguageCode(languageCode)]?.value
+			this.entity.descriptions[languageCode]?.value ??
+			this.entity.descriptions[this.#baseLanguageCode(languageCode)]?.value
 		);
 	}
 
 	aliases(languageCode = this.defaultLanguageCode): readonly string[] {
-		const aliases = "aliases" in this.entity && this.entity.aliases;
-		// oxlint-disable-next-line typescript/strict-boolean-expressions
-		if (!aliases) {
+		if (!("aliases" in this.entity)) {
 			return [];
 		}
 
 		return (
-			aliases[languageCode]?.map((o) => o.value) ??
-			aliases[this.#baseLanguageCode(languageCode)]?.map((o) => o.value) ??
+			this.entity.aliases[languageCode]?.map((o) => o.value) ??
+			this.entity.aliases[this.#baseLanguageCode(languageCode)]?.map((o) => o.value) ??
 			[]
 		);
 	}
