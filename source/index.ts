@@ -150,6 +150,7 @@ export class WikibaseEntityReader {
 	}
 
 	#baseLanguageCode(languageCode: string) {
+		// oxlint-disable-next-line typescript/no-non-null-assertion
 		return languageCode.split("-")[0]!;
 	}
 }
